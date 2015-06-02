@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EA1B197A06002C8500 /* AppDelegate.swift */; };
+		794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */; };
+		794F19F01B197A06002C8500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EF1B197A06002C8500 /* ViewController.swift */; };
+		794F19F31B197A06002C8500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794F19F11B197A06002C8500 /* Main.storyboard */; };
+		794F19F51B197A06002C8500 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794F19F41B197A06002C8500 /* Images.xcassets */; };
+		794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794F19F61B197A06002C8500 /* LaunchScreen.xib */; };
+		794F1A041B197A06002C8500 /* CookingClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A031B197A06002C8500 /* CookingClubTests.swift */; };
+		794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */; };
+		794F1A101B199CAF002C8500 /* IMG_3375.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		794F19FE1B197A06002C8500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794F19DD1B197A05002C8500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794F19E41B197A06002C8500;
+			remoteInfo = CookingClub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		794F19E51B197A06002C8500 /* CookingClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794F19E91B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794F19EA1B197A06002C8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		794F19ED1B197A06002C8500 /* CookingClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookingClub.xcdatamodel; sourceTree = "<group>"; };
+		794F19EF1B197A06002C8500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		794F19F21B197A06002C8500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794F19F41B197A06002C8500 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		794F19F71B197A06002C8500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		794F19FD1B197A06002C8500 /* CookingClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookingClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		794F1A021B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794F1A031B197A06002C8500 /* CookingClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingClubTests.swift; sourceTree = "<group>"; };
+		794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3660.jpg; sourceTree = "<group>"; };
+		794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3375.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794F19E21B197A06002C8500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794F19FA1B197A06002C8500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794F19DC1B197A05002C8500 = {
+			isa = PBXGroup;
+			children = (
+				794F19E71B197A06002C8500 /* CookingClub */,
+				794F1A001B197A06002C8500 /* CookingClubTests */,
+				794F19E61B197A06002C8500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		794F19E61B197A06002C8500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794F19E51B197A06002C8500 /* CookingClub.app */,
+				794F19FD1B197A06002C8500 /* CookingClubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794F19E71B197A06002C8500 /* CookingClub */ = {
+			isa = PBXGroup;
+			children = (
+				794F19EA1B197A06002C8500 /* AppDelegate.swift */,
+				794F19EF1B197A06002C8500 /* ViewController.swift */,
+				794F19F11B197A06002C8500 /* Main.storyboard */,
+				794F19F41B197A06002C8500 /* Images.xcassets */,
+				794F19F61B197A06002C8500 /* LaunchScreen.xib */,
+				794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */,
+				794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */,
+				794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */,
+				794F19E81B197A06002C8500 /* Supporting Files */,
+			);
+			path = CookingClub;
+			sourceTree = "<group>";
+		};
+		794F19E81B197A06002C8500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794F19E91B197A06002C8500 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		794F1A001B197A06002C8500 /* CookingClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				794F1A031B197A06002C8500 /* CookingClubTests.swift */,
+				794F1A011B197A06002C8500 /* Supporting Files */,
+			);
+			path = CookingClubTests;
+			sourceTree = "<group>";
+		};
+		794F1A011B197A06002C8500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794F1A021B197A06002C8500 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		794F19E41B197A06002C8500 /* CookingClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794F1A071B197A06002C8500 /* Build configuration list for PBXNativeTarget "CookingClub" */;
+			buildPhases = (
+				794F19E11B197A06002C8500 /* Sources */,
+				794F19E21B197A06002C8500 /* Frameworks */,
+				794F19E31B197A06002C8500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookingClub;
+			productName = CookingClub;
+			productReference = 794F19E51B197A06002C8500 /* CookingClub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		794F19FC1B197A06002C8500 /* CookingClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794F1A0A1B197A06002C8500 /* Build configuration list for PBXNativeTarget "CookingClubTests" */;
+			buildPhases = (
+				794F19F91B197A06002C8500 /* Sources */,
+				794F19FA1B197A06002C8500 /* Frameworks */,
+				794F19FB1B197A06002C8500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794F19FF1B197A06002C8500 /* PBXTargetDependency */,
+			);
+			name = CookingClubTests;
+			productName = CookingClubTests;
+			productReference = 794F19FD1B197A06002C8500 /* CookingClubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794F19DD1B197A05002C8500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Annemarie Ketola";
+				TargetAttributes = {
+					794F19E41B197A06002C8500 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					794F19FC1B197A06002C8500 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 794F19E41B197A06002C8500;
+					};
+				};
+			};
+			buildConfigurationList = 794F19E01B197A05002C8500 /* Build configuration list for PBXProject "CookingClub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794F19DC1B197A05002C8500;
+			productRefGroup = 794F19E61B197A06002C8500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794F19E41B197A06002C8500 /* CookingClub */,
+				794F19FC1B197A06002C8500 /* CookingClubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794F19E31B197A06002C8500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794F1A101B199CAF002C8500 /* IMG_3375.jpg in Resources */,
+				794F19F31B197A06002C8500 /* Main.storyboard in Resources */,
+				794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */,
+				794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */,
+				794F19F51B197A06002C8500 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794F19FB1B197A06002C8500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794F19E11B197A06002C8500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794F19F01B197A06002C8500 /* ViewController.swift in Sources */,
+				794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */,
+				794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794F19F91B197A06002C8500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794F1A041B197A06002C8500 /* CookingClubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		794F19FF1B197A06002C8500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794F19E41B197A06002C8500 /* CookingClub */;
+			targetProxy = 794F19FE1B197A06002C8500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		794F19F11B197A06002C8500 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794F19F21B197A06002C8500 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		794F19F61B197A06002C8500 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794F19F71B197A06002C8500 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794F1A051B197A06002C8500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		794F1A061B197A06002C8500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794F1A081B197A06002C8500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookingClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		794F1A091B197A06002C8500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookingClub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		794F1A0B1B197A06002C8500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookingClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookingClub.app/CookingClub";
+			};
+			name = Debug;
+		};
+		794F1A0C1B197A06002C8500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CookingClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookingClub.app/CookingClub";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794F19E01B197A05002C8500 /* Build configuration list for PBXProject "CookingClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794F1A051B197A06002C8500 /* Debug */,
+				794F1A061B197A06002C8500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794F1A071B197A06002C8500 /* Build configuration list for PBXNativeTarget "CookingClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794F1A081B197A06002C8500 /* Debug */,
+				794F1A091B197A06002C8500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		794F1A0A1B197A06002C8500 /* Build configuration list for PBXNativeTarget "CookingClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794F1A0B1B197A06002C8500 /* Debug */,
+				794F1A0C1B197A06002C8500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				794F19ED1B197A06002C8500 /* CookingClub.xcdatamodel */,
+			);
+			currentVersion = 794F19ED1B197A06002C8500 /* CookingClub.xcdatamodel */;
+			path = CookingClub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 794F19DD1B197A05002C8500 /* Project object */;
+}
