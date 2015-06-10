@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="1156" y="428"/>
         </scene>
-        <!--View Controller-->
+        <!--Start Club View Controller-->
         <scene sceneID="Aws-R1-9C8">
             <objects>
-                <viewController id="zQy-OD-M3m" sceneMemberID="viewController">
+                <viewController id="zQy-OD-M3m" customClass="StartClubViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pk8-Se-eQv"/>
                         <viewControllerLayoutGuide type="bottom" id="ohk-X1-fdi"/>
@@ -189,15 +189,23 @@
                             <constraint firstItem="8k4-6d-zXj" firstAttribute="leading" secondItem="Z9F-2A-ZyY" secondAttribute="leadingMargin" id="zVg-NL-nb4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="VIS-Uj-1OB" id="UeB-il-eyi"/>
+                        <outlet property="clubNameTextField" destination="jfM-Xv-fbe" id="ynY-Nk-HSX"/>
+                        <outlet property="passwordTextField" destination="JYk-R6-Y91" id="dgq-t0-B0K"/>
+                        <outlet property="phoneTextField" destination="RgS-pI-hwU" id="kgW-I1-nM8"/>
+                        <outlet property="retypePasswordTextField" destination="jdE-kO-IJN" id="2xs-7A-bd6"/>
+                        <outlet property="usernameTextField" destination="pQ8-MI-4xa" id="1QB-59-Eap"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJp-Vs-ppY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1852" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="Cc9-47-hzR">
             <objects>
-                <viewController id="Tho-7L-Bl8" sceneMemberID="viewController">
+                <viewController id="Tho-7L-Bl8" customClass="CalendarViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="saZ-W3-c9K"/>
                         <viewControllerLayoutGuide type="bottom" id="jWT-wd-6aP"/>
@@ -228,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="2518" y="-870"/>
         </scene>
-        <!--View Controller-->
+        <!--Members View Controller-->
         <scene sceneID="A4o-6k-oAI">
             <objects>
-                <viewController id="bEV-Ya-BRh" sceneMemberID="viewController">
+                <viewController id="bEV-Ya-BRh" customClass="MembersViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="omd-GG-Zjv"/>
                         <viewControllerLayoutGuide type="bottom" id="u6D-Zx-uRr"/>
@@ -264,7 +272,7 @@
                                 <rect key="frame" x="0.0" y="101" width="600" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="qPa-Hm-3Zn">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingMemberCells" rowHeight="100" id="qPa-Hm-3Zn" customClass="PendingMemberCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qPa-Hm-3Zn" id="pX3-ao-P1v">
@@ -291,6 +299,10 @@
                                                 <constraint firstItem="1ir-GG-v8a" firstAttribute="leading" secondItem="pX3-ao-P1v" secondAttribute="leadingMargin" id="ze1-od-vYr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userImage" destination="1ir-GG-v8a" id="d8g-Eo-cAr"/>
+                                            <outlet property="usernameLabel" destination="3Uu-4F-TaM" id="yhY-qC-mFV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -298,7 +310,7 @@
                                 <rect key="frame" x="0.0" y="318" width="600" height="282"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="e7l-go-Ngy">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="e7l-go-Ngy" customClass="ExisitingMemberCell" customModule="CookingClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e7l-go-Ngy" id="Ig5-YH-GcG">
@@ -325,6 +337,10 @@
                                                 <constraint firstItem="jgK-uA-ft1" firstAttribute="leading" secondItem="Ka0-Kb-vQm" secondAttribute="trailing" constant="8" id="yFq-ar-r4c"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userImage" destination="Ka0-Kb-vQm" id="kAx-tW-FmW"/>
+                                            <outlet property="username" destination="jgK-uA-ft1" id="4Vk-5t-Fej"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -348,15 +364,21 @@
                             <constraint firstItem="op9-dr-nyj" firstAttribute="leading" secondItem="GQY-TG-Ovp" secondAttribute="leadingMargin" constant="-16" id="vok-cV-cb0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exisitingMembersTableView" destination="op9-dr-nyj" id="8sd-zK-wNy"/>
+                        <outlet property="existingMembersLabel" destination="x9N-Z9-jI5" id="i7h-Y4-r0P"/>
+                        <outlet property="pendingMembersLabel" destination="rbu-xg-PEl" id="qeA-Sv-QCJ"/>
+                        <outlet property="pendingMembersTableView" destination="ig8-ZY-v9c" id="Gsu-rj-Zoj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qEI-ax-Kvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3214" y="-786"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Admin Table View Controller-->
         <scene sceneID="ZpS-dh-CE9">
             <objects>
-                <tableViewController id="mQ0-6g-Idp" sceneMemberID="viewController">
+                <tableViewController id="mQ0-6g-Idp" customClass="AdminTableViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GSa-Y9-oh6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -425,15 +447,20 @@
                     </toolbarItems>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="adminOptionLabel" destination="SI1-6G-WJS" id="DIw-kv-4rm"/>
+                        <outlet property="calendarLabel" destination="ag6-3O-uW9" id="lq5-G1-Xe2"/>
+                        <outlet property="membersLabel" destination="JBh-p1-zqO" id="vSI-rW-ZJa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXt-tb-DXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2518" y="-216"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="UEg-yt-ngr">
             <objects>
-                <viewController id="9Lk-X1-Fvc" sceneMemberID="viewController">
+                <viewController id="9Lk-X1-Fvc" customClass="ProfileViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xrv-jO-O9S"/>
                         <viewControllerLayoutGuide type="bottom" id="ua8-GD-cST"/>
@@ -448,11 +475,13 @@
                                     <navigationItem title="Anne Ketola" id="gOA-l7-rJf">
                                         <barButtonItem key="leftBarButtonItem" title="Admin" id="4Kp-Fn-o7r">
                                             <connections>
+                                                <action selector="adminButtonPressed:" destination="9Lk-X1-Fvc" id="5Om-sI-hyd"/>
                                                 <segue destination="mQ0-6g-Idp" kind="show" identifier="SHOW_ADMIN" id="CDZ-qF-RWR"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Account" id="wzf-gY-QmD">
                                             <connections>
+                                                <action selector="accountButtonPressed:" destination="9Lk-X1-Fvc" id="vyp-f2-Csf"/>
                                                 <segue destination="Fhe-1E-yTz" kind="show" identifier="SHOW_SETTINGS" id="LhI-b3-gXS"/>
                                             </connections>
                                         </barButtonItem>
@@ -524,6 +553,7 @@
                                 <items>
                                     <barButtonItem title="Recipes" id="ggf-1Y-2bo">
                                         <connections>
+                                            <action selector="recipeButtonPressed:" destination="9Lk-X1-Fvc" id="7PF-7f-OjF"/>
                                             <segue destination="ChX-fv-s3a" kind="show" identifier="SHOW_ALL_RECIPES" id="NXA-g7-4D6"/>
                                         </connections>
                                     </barButtonItem>
@@ -554,15 +584,22 @@
                             <constraint firstAttribute="trailingMargin" secondItem="pLZ-43-xNr" secondAttribute="trailing" constant="-16" id="zWb-Uk-cNM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clubNameLabel" destination="4KM-zP-66u" id="Mvo-vA-0fa"/>
+                        <outlet property="upcomingCookigClubDatesTableView" destination="Yqf-Gm-aoU" id="g6m-0c-rBg"/>
+                        <outlet property="upcomingCookingClubDatedLabel" destination="8G5-G5-yfT" id="XXH-nW-dvo"/>
+                        <outlet property="userImage" destination="PkN-pH-uTK" id="t3G-mr-3Z5"/>
+                        <outlet property="userNameLabel" destination="gOA-l7-rJf" id="1zP-dt-jKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91D-zA-6TS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2540" y="484"/>
         </scene>
-        <!--View Controller-->
+        <!--Event View Controller-->
         <scene sceneID="g6X-r3-5xB">
             <objects>
-                <viewController id="5tr-o0-ppV" sceneMemberID="viewController">
+                <viewController id="5tr-o0-ppV" customClass="EventViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3fO-0T-bzM"/>
                         <viewControllerLayoutGuide type="bottom" id="jJT-nh-9ud"/>
@@ -575,9 +612,14 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem id="OjO-Dx-yVi">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RGB-OM-55e"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="RGB-OM-55e">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="5tr-o0-ppV" id="gqP-0W-T7E"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Pick a Dish" id="poe-9w-GW3">
                                             <connections>
+                                                <action selector="pickADishButtonPressed:" destination="5tr-o0-ppV" id="P51-vZ-5UG"/>
                                                 <segue destination="OVz-1X-vQJ" kind="show" identifier="SHOW_PICK_A_DISH" id="bXc-uF-N7b"/>
                                             </connections>
                                         </barButtonItem>
@@ -603,7 +645,7 @@
                                     <constraint firstAttribute="height" constant="109" id="E0M-AA-aFC"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HostCell" rowHeight="100" id="d7c-TH-IVs">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HostCell" rowHeight="100" id="d7c-TH-IVs" customClass="HostCell" customModule="CookingClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d7c-TH-IVs" id="UD5-E8-34W">
@@ -648,6 +690,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dishLabel" destination="w8K-Yl-cqp" id="vwB-Ma-UyA"/>
+                                            <outlet property="hostLabel" destination="Zt2-yN-N0x" id="8GN-Bw-Vrg"/>
+                                            <outlet property="hostPhoneLabel" destination="VHM-Ik-Ffp" id="tar-eq-dQ5"/>
+                                            <outlet property="userImage" destination="xF3-E4-VdZ" id="EwD-P7-IUS"/>
                                             <segue destination="s9X-an-8hG" kind="show" identifier="SHOW_RECIPE_HOST" id="Q21-9X-SQJ"/>
                                         </connections>
                                     </tableViewCell>
@@ -657,7 +703,7 @@
                                 <rect key="frame" x="0.0" y="418" width="600" height="182"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="9ak-hB-94U">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherDishCell" rowHeight="100" id="9ak-hB-94U" customClass="OtherDishCell" customModule="CookingClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ak-hB-94U" id="m5w-HN-Xvk">
@@ -694,6 +740,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dishLabel" destination="Qyf-iD-vkn" id="2BB-oY-vUU"/>
+                                            <outlet property="userImage" destination="kZY-xj-sAW" id="ZLY-OS-TT5"/>
+                                            <outlet property="userNameLabel" destination="XLb-Xg-RfR" id="aR4-ET-Vdh"/>
                                             <segue destination="s9X-an-8hG" kind="show" identifier="SHOW_RECIPE" id="1y4-47-8z5"/>
                                         </connections>
                                     </tableViewCell>
@@ -715,15 +764,18 @@
                             <constraint firstItem="qbp-xY-Rh6" firstAttribute="trailing" secondItem="vD9-Ou-Mav" secondAttribute="trailingMargin" constant="16" id="wJq-y1-4Fj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="amq-uw-yvV" id="9C8-IA-sPo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeU-jn-Cjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2540" y="1173"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Recipe View Controller-->
         <scene sceneID="WCt-cG-9D3">
             <objects>
-                <viewController id="s9X-an-8hG" sceneMemberID="viewController">
+                <viewController id="s9X-an-8hG" customClass="AddRecipeViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pJ6-zm-dXw"/>
                         <viewControllerLayoutGuide type="bottom" id="qvH-Mb-82g"/>
@@ -735,9 +787,13 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-WU-1V9">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Recipe" id="hPe-uu-Hdn">
+                                    <navigationItem title="Add Recipe" id="hPe-uu-Hdn">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="91e-mN-JA8"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="LDq-4N-czN"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="LDq-4N-czN">
+                                            <connections>
+                                                <action selector="saveButtonPressed:" destination="s9X-an-8hG" id="JLK-MC-agX"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -816,15 +872,26 @@
                             <constraint firstItem="znl-nN-LuG" firstAttribute="top" secondItem="qAj-nP-0oC" secondAttribute="bottom" constant="8" id="zMM-Ng-rGp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="31n-FX-gft" id="08T-dk-nBJ"/>
+                        <outlet property="quoteTextField" destination="sMW-bW-UWe" id="rFS-As-0mR"/>
+                        <outlet property="recipeHeaderLabel" destination="hPe-uu-Hdn" id="1JZ-7a-zq6"/>
+                        <outlet property="recipeImage" destination="znl-nN-LuG" id="qPO-bd-giO"/>
+                        <outlet property="recipeLinkLabel" destination="Wqr-Dy-1FB" id="OlP-Pa-mJy"/>
+                        <outlet property="recipeLinkTextField" destination="ke7-02-BTe" id="BXe-x8-ZUr"/>
+                        <outlet property="recipeNameLabel" destination="fwM-he-FxE" id="3kl-Ht-Mhi"/>
+                        <outlet property="recipeTextField" destination="YUz-mX-AzG" id="ikC-ZK-GaH"/>
+                        <outlet property="userImage" destination="qAj-nP-0oC" id="mtJ-1k-oWk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9u-uV-6Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3186" y="1173"/>
         </scene>
-        <!--View Controller-->
+        <!--PickA Dish View Controller-->
         <scene sceneID="ztL-xB-MQu">
             <objects>
-                <viewController id="OVz-1X-vQJ" sceneMemberID="viewController">
+                <viewController id="OVz-1X-vQJ" customClass="PickADishViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mq7-lA-aPK"/>
                         <viewControllerLayoutGuide type="bottom" id="URm-U0-TqQ"/>
@@ -836,9 +903,17 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ig-jT-pfn">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="2ux-mR-yJI">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kit-ae-p28"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Add a Reminder" id="gxJ-GO-Rzt"/>
+                                    <navigationItem title="Pick a Dish" id="2ux-mR-yJI">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kit-ae-p28">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="OVz-1X-vQJ" id="OcH-M8-fwr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Add a Reminder" id="gxJ-GO-Rzt">
+                                            <connections>
+                                                <action selector="addAReminderButtonPressed:" destination="OVz-1X-vQJ" id="QHm-wB-Bah"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -846,7 +921,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Uex-Ii-LL8">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DishCell" id="Uex-Ii-LL8" customClass="DishCell" customModule="CookingClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uex-Ii-LL8" id="TxJ-aq-C8E">
@@ -860,6 +935,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dishLabel" destination="I98-ym-9A5" id="wMV-di-UQt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -875,15 +953,18 @@
                             <constraint firstItem="M2k-CJ-pSI" firstAttribute="leading" secondItem="9W8-HJ-rrS" secondAttribute="leadingMargin" constant="-16" id="wMS-TT-Bik"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickADishTableView" destination="M2k-CJ-pSI" id="YNF-jP-PqT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ba-ti-0Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2540" y="1898"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="BXp-OR-VU8">
             <objects>
-                <viewController id="Fhe-1E-yTz" sceneMemberID="viewController">
+                <viewController id="Fhe-1E-yTz" customClass="AccountViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AcO-Yx-9rG"/>
                         <viewControllerLayoutGuide type="bottom" id="b6Q-RP-Uoo"/>
@@ -895,13 +976,17 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-iA-Hjo">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Settings" id="ZAH-ql-8Bx">
+                                    <navigationItem title="Account" id="ZAH-ql-8Bx">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="fYl-dH-lai">
                                             <connections>
                                                 <segue destination="9Lk-X1-Fvc" kind="presentation" modalTransitionStyle="crossDissolve" id="cRo-re-YCR"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" id="H1n-Uh-5Ha"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="H1n-Uh-5Ha">
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="Fhe-1E-yTz" id="7g8-fm-86k"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -928,7 +1013,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LF9-Fd-anF" kind="show" id="SUR-fy-anw"/>
+                                    <action selector="newPasswordButtonPressed:" destination="Fhe-1E-yTz" eventType="touchUpInside" id="nMA-gZ-6IN"/>
+                                    <segue destination="LF9-Fd-anF" kind="show" identifier="SHOW_MAKE_NEW_PASSWORD" id="T0c-9F-5B4"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2911 2nd Ave Unit#509 Seattle, WA 98121" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ZU-AV-m6h">
@@ -978,15 +1064,23 @@
                             <constraint firstItem="0uJ-Dy-MuO" firstAttribute="leading" secondItem="dFg-3h-JJZ" secondAttribute="leadingMargin" constant="-16" id="ys7-55-TTS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="9ZU-AV-m6h" id="sRW-5f-f3b"/>
+                        <outlet property="fullUsernameTextField" destination="DKg-y0-EMG" id="XtT-Mt-obg"/>
+                        <outlet property="phoneTextField" destination="p32-sd-2ds" id="HDc-kE-FSI"/>
+                        <outlet property="settingsLabel" destination="ZAH-ql-8Bx" id="YW9-ne-J1T"/>
+                        <outlet property="userImage" destination="6cn-FA-msV" id="0o4-EH-QMN"/>
+                        <outlet property="usernameTextField" destination="MY6-kb-p29" id="kWa-pp-5Ef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sJ-QJ-2OG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3220" y="484"/>
         </scene>
-        <!--View Controller-->
+        <!--New Password View Controller-->
         <scene sceneID="cRy-Hr-SOQ">
             <objects>
-                <viewController id="LF9-Fd-anF" sceneMemberID="viewController">
+                <viewController id="LF9-Fd-anF" customClass="NewPasswordViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kyX-ob-S29"/>
                         <viewControllerLayoutGuide type="bottom" id="5rk-yh-yet"/>
@@ -999,8 +1093,17 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Make a New Password" id="jtv-UK-gTF">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="A0O-qd-nkt"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="YBS-AF-gKw"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="A0O-qd-nkt">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="LF9-Fd-anF" id="Ta4-uZ-C1W"/>
+                                                <segue destination="Fhe-1E-yTz" kind="show" identifier="SHOW_PROFILE_BACK" id="9Vd-Nl-aqK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="YBS-AF-gKw">
+                                            <connections>
+                                                <action selector="saveButtonPressed:" destination="LF9-Fd-anF" id="4tm-Fy-72K"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1036,15 +1139,20 @@
                             <constraint firstItem="Se0-yB-HgN" firstAttribute="top" secondItem="kZf-C0-vHg" secondAttribute="bottom" constant="8" id="ygk-Uy-lBC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentPasswordTextField" destination="kZf-C0-vHg" id="I4h-5L-rZn"/>
+                        <outlet property="newPasswordTextField" destination="Se0-yB-HgN" id="IMQ-3X-9L5"/>
+                        <outlet property="retypeNewPasswordTextField" destination="1a0-VT-7GK" id="79w-Zh-V6P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJP-6c-ycU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3877" y="484"/>
         </scene>
-        <!--View Controller-->
+        <!--Join Club View Controller-->
         <scene sceneID="dxu-26-oDy">
             <objects>
-                <viewController id="Nu7-er-Xi5" sceneMemberID="viewController">
+                <viewController id="Nu7-er-Xi5" customClass="JoinClubViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AJi-s8-zXP"/>
                         <viewControllerLayoutGuide type="bottom" id="Dbs-Lk-DcK"/>
@@ -1133,15 +1241,23 @@
                             <constraint firstItem="oyM-jJ-edc" firstAttribute="top" secondItem="AJi-s8-zXP" secondAttribute="bottom" constant="8" id="z9G-u7-Ig8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="cMr-vw-6oi" id="4ae-CW-CTz"/>
+                        <outlet property="joinClubNameTextField" destination="F67-cM-4pw" id="Tjc-BX-dyR"/>
+                        <outlet property="passwordTextField" destination="kDw-zS-UNQ" id="NMy-Ez-DSx"/>
+                        <outlet property="phoneTextField" destination="ZGs-xd-4xT" id="YSY-ij-X74"/>
+                        <outlet property="retypePasswordTextField" destination="dfi-WI-6Gw" id="rEB-CF-rWq"/>
+                        <outlet property="usernameTextField" destination="AQp-RD-m8e" id="vEc-RR-yAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LpH-VK-lLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1844" y="800"/>
         </scene>
-        <!--View Controller-->
+        <!--View Recipe View Controller-->
         <scene sceneID="L7E-Wy-8hB">
             <objects>
-                <viewController id="FAu-aF-fMm" sceneMemberID="viewController">
+                <viewController id="FAu-aF-fMm" customClass="ViewRecipeViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0l5-bJ-YPm"/>
                         <viewControllerLayoutGuide type="bottom" id="dwT-hJ-BMO"/>
@@ -1150,59 +1266,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-yK-P1e">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-yK-P1e">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem id="zsF-l4-9hO">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0WW-Aa-uEe"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="0WW-Aa-uEe">
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="FAu-aF-fMm" id="g6p-nK-AaV"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_3660.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZCy-Gh-Jfe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_3660.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZCy-Gh-Jfe">
                                 <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="IIK-UF-kXd"/>
                                     <constraint firstAttribute="height" constant="100" id="RpA-Os-W1N"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="IMG_3375.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="23u-a8-T6c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_3375.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="23u-a8-T6c">
                                 <rect key="frame" x="16" y="180" width="568" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="23u-a8-T6c" secondAttribute="height" multiplier="3:1.3" id="GaL-pk-SQ0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Quote:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2N-Fj-UyM">
-                                <rect key="frame" x="124" y="78" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recipe Link:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t21-0M-97i">
-                                <rect key="frame" x="16" y="542" width="95" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="There once was a man from Nantucket. . . . .  ." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-0y-7JJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There once was a man from Nantucket. . . . .  ." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-0y-7JJ">
                                 <rect key="frame" x="124" y="111" width="460" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="www.epicurious.com/chicken-curry-burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y14-Hr-Cc1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.epicurious.com/chicken-curry-burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y14-Hr-Cc1">
                                 <rect key="frame" x="16" y="571" width="328" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chicken-Curry-Brioche-Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eS-w0-45J">
-                                <rect key="frame" x="16" y="513" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recipe Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPm-ff-8p4">
-                                <rect key="frame" x="16" y="484" width="109" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken-Curry-Brioche-Burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eS-w0-45J">
+                                <rect key="frame" x="16" y="542" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1210,37 +1312,40 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xPm-ff-8p4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="23u-a8-T6c" secondAttribute="bottom" constant="8" id="1IU-bQ-Zcz"/>
                             <constraint firstItem="1oA-0y-7JJ" firstAttribute="leading" secondItem="ZCy-Gh-Jfe" secondAttribute="trailing" constant="8" id="9UO-2i-ifw"/>
                             <constraint firstItem="23u-a8-T6c" firstAttribute="width" secondItem="23u-a8-T6c" secondAttribute="height" multiplier="3:1.3" id="ADO-sx-mIH"/>
                             <constraint firstItem="dwT-hJ-BMO" firstAttribute="top" secondItem="y14-Hr-Cc1" secondAttribute="bottom" constant="8" id="BWK-7X-cNm"/>
                             <constraint firstItem="5eS-w0-45J" firstAttribute="trailing" secondItem="ska-c4-zYr" secondAttribute="trailingMargin" id="FH2-pl-eec"/>
                             <constraint firstItem="5eS-w0-45J" firstAttribute="leading" secondItem="ska-c4-zYr" secondAttribute="leadingMargin" id="FLi-jb-VQ5"/>
-                            <constraint firstItem="y14-Hr-Cc1" firstAttribute="top" secondItem="t21-0M-97i" secondAttribute="bottom" constant="8" id="Oaf-gu-vDF"/>
+                            <constraint firstAttribute="centerX" secondItem="23u-a8-T6c" secondAttribute="centerX" id="LFH-0u-BLD"/>
                             <constraint firstItem="1oA-0y-7JJ" firstAttribute="centerY" secondItem="ZCy-Gh-Jfe" secondAttribute="centerY" constant="-0.5" id="OhY-sy-s6w"/>
                             <constraint firstItem="ZCy-Gh-Jfe" firstAttribute="top" secondItem="ELi-yK-P1e" secondAttribute="bottom" constant="8" id="QCK-aN-Jjw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ELi-yK-P1e" secondAttribute="trailing" constant="-16" id="RBe-yG-cSk"/>
                             <constraint firstItem="23u-a8-T6c" firstAttribute="top" secondItem="ZCy-Gh-Jfe" secondAttribute="bottom" constant="8" id="U0K-ZF-qID"/>
-                            <constraint firstItem="t21-0M-97i" firstAttribute="top" secondItem="5eS-w0-45J" secondAttribute="bottom" constant="8" id="WIx-R1-hFo"/>
                             <constraint firstItem="y14-Hr-Cc1" firstAttribute="leading" secondItem="ska-c4-zYr" secondAttribute="leadingMargin" id="Xrh-bF-HRB"/>
-                            <constraint firstItem="M2N-Fj-UyM" firstAttribute="leading" secondItem="ZCy-Gh-Jfe" secondAttribute="trailing" constant="8" id="ZZ8-ct-C1S"/>
                             <constraint firstItem="ELi-yK-P1e" firstAttribute="leading" secondItem="ska-c4-zYr" secondAttribute="leadingMargin" constant="-16" id="ZqR-3X-WOR"/>
                             <constraint firstItem="ZCy-Gh-Jfe" firstAttribute="leading" secondItem="ska-c4-zYr" secondAttribute="leadingMargin" id="cK5-LT-Bjv"/>
+                            <constraint firstItem="y14-Hr-Cc1" firstAttribute="top" secondItem="5eS-w0-45J" secondAttribute="bottom" constant="8" id="ceZ-yB-Mq5"/>
                             <constraint firstItem="1oA-0y-7JJ" firstAttribute="trailing" secondItem="ska-c4-zYr" secondAttribute="trailingMargin" id="eTm-qq-xcM"/>
-                            <constraint firstItem="5eS-w0-45J" firstAttribute="top" secondItem="xPm-ff-8p4" secondAttribute="bottom" constant="8" id="lOf-wH-hba"/>
-                            <constraint firstItem="t21-0M-97i" firstAttribute="leading" secondItem="ska-c4-zYr" secondAttribute="leadingMargin" id="pMS-K2-2mo"/>
                             <constraint firstItem="ELi-yK-P1e" firstAttribute="top" secondItem="0l5-bJ-YPm" secondAttribute="bottom" id="zPN-kY-yq3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="1oA-0y-7JJ" id="L60-Wz-SCL"/>
+                        <outlet property="recipeImage" destination="23u-a8-T6c" id="q5Z-WF-gI0"/>
+                        <outlet property="recipeLinkLabel" destination="y14-Hr-Cc1" id="xaO-W3-LWv"/>
+                        <outlet property="recipeNameLabel" destination="5eS-w0-45J" id="zKB-4P-2IN"/>
+                        <outlet property="userImage" destination="ZCy-Gh-Jfe" id="tgS-9U-M0J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LB-Dd-wkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1224" y="1472"/>
         </scene>
-        <!--View Controller-->
+        <!--All Recipes View Controller-->
         <scene sceneID="Tad-X0-g0B">
             <objects>
-                <viewController id="ChX-fv-s3a" sceneMemberID="viewController">
+                <viewController id="ChX-fv-s3a" customClass="AllRecipesViewController" customModule="CookingClub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iC9-Pc-0Xf"/>
                         <viewControllerLayoutGuide type="bottom" id="LAw-jg-kXK"/>
@@ -1255,6 +1360,7 @@
                                     <navigationItem title="All Clear Lake Girls Recipes" id="YGw-R3-aAK">
                                         <barButtonItem key="rightBarButtonItem" title="Back" id="3Jr-Z7-EYF">
                                             <connections>
+                                                <action selector="backButtonPressed:" destination="ChX-fv-s3a" id="dC5-j2-2GZ"/>
                                                 <segue destination="9Lk-X1-Fvc" kind="show" identifier="SHOW_BACK_TO_PROFILE" id="75Z-I7-Vky"/>
                                             </connections>
                                         </barButtonItem>
@@ -1270,7 +1376,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="ncd-1B-AuV">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="ncd-1B-AuV" customClass="RecipeCell" customModule="CookingClub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1291,6 +1397,8 @@
                                         </view>
                                         <color key="backgroundColor" red="0.97943074870000002" green="0.87679263249999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="recipeImage" destination="nCl-5L-KyL" id="wAI-Pk-1N7"/>
+                                            <outlet property="recipeNameLabel" destination="HeP-pf-bwq" id="kk4-st-4F2"/>
                                             <segue destination="FAu-aF-fMm" kind="show" identifier="SHOW_RECIPE_DETAIL" id="tk7-FZ-1Nf"/>
                                         </connections>
                                     </collectionViewCell>
@@ -1308,6 +1416,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="WkL-bK-YBi" secondAttribute="trailing" constant="-16" id="rgQ-HU-TXm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeCollectionView" destination="a3X-jO-e6K" id="knv-XQ-LoR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEc-d2-5kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1320,6 +1431,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="75Z-I7-Vky"/>
+        <segue reference="LhI-b3-gXS"/>
         <segue reference="1y4-47-8z5"/>
     </inferredMetricsTieBreakers>
 </document>
