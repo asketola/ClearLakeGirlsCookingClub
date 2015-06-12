@@ -2,7 +2,7 @@
 //  HostCell.swift
 //  CookingClub
 //
-//  Created by Annemarie Ketola on 6/10/15.
+//  Created by Annemarie Ketola on 6/11/15.
 //  Copyright (c) 2015 Annemarie Ketola. All rights reserved.
 //
 
@@ -11,9 +11,11 @@ import UIKit
 class HostCell: UITableViewCell {
 
     @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var hostLabel: UILabel!
-    @IBOutlet weak var hostPhoneLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var dishLabel: UILabel!
+    
+    
     
     
     override func awakeFromNib() {
@@ -26,5 +28,5 @@ class HostCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

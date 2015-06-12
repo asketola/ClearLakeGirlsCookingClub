@@ -8,10 +8,12 @@
 
 import UIKit
 
-class AllRecipesViewController: UIViewController {
+class AllRecipesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var recipeCollectionView: UICollectionView!
     
+    var dishLabels = ["Burgers", "Noodles", "Salad", "Soup", "Popeovers", "Margarita", "Pie"]
+    var dishImages = ["IMG_3375.jpg", "Sesame-Noodles.jpg", "salad.jpeg", "cheesy_soup.jpg", "popovers.jpg", "frozen-margarita.jpg", "Strawberry-Rhubarb-Pie.jpg"]
     
     
     override func viewDidLoad() {
@@ -23,6 +25,26 @@ class AllRecipesViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dishLabels.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell:RecipeCell = collectionView.dequeueReusableCellWithReuseIdentifier("RecipeCell", forIndexPath: indexPath) as! RecipeCell
+        
+        cell.recipeImage.image = UIImage(named: dishImages[indexPath.row])
+        cell.recipeNameLabel?.text = dishLabels[indexPath.row]
+        
+        
+        return cell
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        println("You picked \(indexPath.row)")
     }
     
 

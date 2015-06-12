@@ -8,13 +8,17 @@
 
 import UIKit
 
-class PickADishViewController: UIViewController {
+class PickADishViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var pickADishTableView: UITableView!
+    
+    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "Second Side", " Second Salad/Soup2"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.pickADishTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "DishCell")
 
         // Do any additional setup after loading the view.
     }
@@ -34,6 +38,22 @@ class PickADishViewController: UIViewController {
     
     @IBAction func backButtonPressed(sender: AnyObject) {
         // send dish picked to Parse
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemsForTableView.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:UITableViewCell = self.pickADishTableView.dequeueReusableCellWithIdentifier("DishCell") as! UITableViewCell
+        
+        cell.textLabel?.text = self.itemsForTableView[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("You selected cell #\(indexPath.row)!")
     }
     
     /*

@@ -2,7 +2,7 @@
 //  PendingMemberCell.swift
 //  CookingClub
 //
-//  Created by Annemarie Ketola on 6/10/15.
+//  Created by Annemarie Ketola on 6/11/15.
 //  Copyright (c) 2015 Annemarie Ketola. All rights reserved.
 //
 
@@ -10,8 +10,9 @@ import UIKit
 
 class PendingMemberCell: UITableViewCell {
 
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var pendingMemberImage: UIImageView!
+    @IBOutlet weak var pendingMemberNameLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +24,5 @@ class PendingMemberCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

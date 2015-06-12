@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // Labels
     @IBOutlet weak var userImage: UIImageView!
@@ -19,9 +19,15 @@ class ProfileViewController: UIViewController {
     // TableView
     @IBOutlet weak var upcomingCookigClubDatesTableView: UITableView!
     
+    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "Second Side", " Second Salad/Soup2"]
+    var datesForTableView = ["Monday, June 1, 2015", "Monday, June 8, 2015", "Monday, June 15, 2015", "Monday, June 22, 2015", "Monday, June 29, 2015", "Monday, July 6, 2015", "Monday, July 13, 2015", "Monday, July 20, 2015", "Monday, July 27, 2015"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var nib = UINib(nibName: "ProfileDateAndDishCell", bundle: nil)
+        upcomingCookigClubDatesTableView.registerNib(nib, forCellReuseIdentifier: "ProfileDateAndDishCell")
 
         // Do any additional setup after loading the view.
     }
@@ -37,6 +43,28 @@ class ProfileViewController: UIViewController {
     @IBAction func accountButtonPressed(sender: AnyObject) {
     }
     @IBAction func recipeButtonPressed(sender: AnyObject) {
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemsForTableView.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        var cell:ProfileDateAndDishCell = self.upcomingCookigClubDatesTableView.dequeueReusableCellWithIdentifier("ProfileDateAndDishCell") as! ProfileDateAndDishCell
+        var cell:ProfileDateAndDishCell = self.upcomingCookigClubDatesTableView.dequeueReusableCellWithIdentifier("ProfileDateAndDishCell") as! ProfileDateAndDishCell
+        
+        cell.dishLabel?.text = self.itemsForTableView[indexPath.row]
+        cell.dateLabel?.text = self.datesForTableView[indexPath.row]
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("You selected cell #\(indexPath.row)!")
     }
     
     

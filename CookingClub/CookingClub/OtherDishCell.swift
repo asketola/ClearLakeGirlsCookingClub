@@ -2,7 +2,7 @@
 //  OtherDishCell.swift
 //  CookingClub
 //
-//  Created by Annemarie Ketola on 6/10/15.
+//  Created by Annemarie Ketola on 6/11/15.
 //  Copyright (c) 2015 Annemarie Ketola. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import UIKit
 
 class OtherDishCell: UITableViewCell {
 
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var dishLabel: UILabel!
+    @IBOutlet weak var userOtherImage: UIImageView!
+    @IBOutlet weak var usernameOtherLabel: UILabel!
+    @IBOutlet weak var dishOtherLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +24,5 @@ class OtherDishCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

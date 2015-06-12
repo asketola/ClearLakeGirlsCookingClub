@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791853F81B2A6B930020FABE /* PickADishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791853F71B2A6B930020FABE /* PickADishViewController.swift */; };
+		791853FB1B2A704A0020FABE /* ProfileDateAndDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791853F91B2A704A0020FABE /* ProfileDateAndDishCell.swift */; };
+		791853FC1B2A704A0020FABE /* ProfileDateAndDishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791853FA1B2A704A0020FABE /* ProfileDateAndDishCell.xib */; };
+		791853FF1B2A754D0020FABE /* HostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791853FD1B2A754D0020FABE /* HostCell.swift */; };
+		791854001B2A754D0020FABE /* HostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791853FE1B2A754D0020FABE /* HostCell.xib */; };
+		791854031B2A7A250020FABE /* OtherDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791854011B2A7A250020FABE /* OtherDishCell.swift */; };
+		791854041B2A7A250020FABE /* OtherDishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791854021B2A7A250020FABE /* OtherDishCell.xib */; };
+		7918540B1B2A857C0020FABE /* cheesy_soup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 791854051B2A857C0020FABE /* cheesy_soup.jpg */; };
+		7918540C1B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 791854061B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg */; };
+		7918540D1B2A857C0020FABE /* frozen-margarita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 791854071B2A857C0020FABE /* frozen-margarita.jpg */; };
+		7918540E1B2A857C0020FABE /* popovers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 791854081B2A857C0020FABE /* popovers.jpg */; };
+		7918540F1B2A857C0020FABE /* salad.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 791854091B2A857C0020FABE /* salad.jpeg */; };
+		791854101B2A857C0020FABE /* Sesame-Noodles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7918540A1B2A857C0020FABE /* Sesame-Noodles.jpg */; };
+		791854131B2A91500020FABE /* MembersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791854111B2A91500020FABE /* MembersCell.swift */; };
+		791854141B2A91500020FABE /* MembersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791854121B2A91500020FABE /* MembersCell.xib */; };
+		791854171B2A92040020FABE /* PendingMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791854151B2A92040020FABE /* PendingMemberCell.swift */; };
+		791854181B2A92040020FABE /* PendingMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791854161B2A92040020FABE /* PendingMemberCell.xib */; };
 		794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EA1B197A06002C8500 /* AppDelegate.swift */; };
 		794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */; };
 		794F19F01B197A06002C8500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EF1B197A06002C8500 /* ViewController.swift */; };
@@ -21,18 +38,12 @@
 		794F1A1C1B280D22002C8500 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A1B1B280D22002C8500 /* ProfileViewController.swift */; };
 		794F1A1E1B280D55002C8500 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A1D1B280D55002C8500 /* AccountViewController.swift */; };
 		794F1A201B280D8B002C8500 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A1F1B280D8B002C8500 /* AddRecipeViewController.swift */; };
-		794F1A221B280DD1002C8500 /* PickADishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A211B280DD1002C8500 /* PickADishViewController.swift */; };
 		794F1A241B280DFC002C8500 /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A231B280DFC002C8500 /* NewPasswordViewController.swift */; };
 		794F1A261B280E2D002C8500 /* AllRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A251B280E2D002C8500 /* AllRecipesViewController.swift */; };
 		794F1A281B280E5D002C8500 /* ViewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A271B280E5D002C8500 /* ViewRecipeViewController.swift */; };
 		794F1A2A1B281C21002C8500 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A291B281C21002C8500 /* RecipeCell.swift */; };
-		794F1A2C1B281F02002C8500 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A2B1B281F02002C8500 /* DishCell.swift */; };
-		794F1A2E1B281F87002C8500 /* HostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A2D1B281F87002C8500 /* HostCell.swift */; };
-		794F1A301B28204A002C8500 /* OtherDishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A2F1B28204A002C8500 /* OtherDishCell.swift */; };
 		794F1A321B2820F6002C8500 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A311B2820F6002C8500 /* EventViewController.swift */; };
 		794F1A341B2822AC002C8500 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A331B2822AC002C8500 /* MembersViewController.swift */; };
-		794F1A381B28245F002C8500 /* PendingMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A371B28245F002C8500 /* PendingMemberCell.swift */; };
-		794F1A3A1B28247A002C8500 /* ExisitingMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A391B28247A002C8500 /* ExisitingMemberCell.swift */; };
 		794F1A3C1B282539002C8500 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A3B1B282539002C8500 /* CalendarViewController.swift */; };
 		794F1A3E1B282569002C8500 /* AdminTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A3D1B282569002C8500 /* AdminTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +59,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791853F71B2A6B930020FABE /* PickADishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickADishViewController.swift; sourceTree = "<group>"; };
+		791853F91B2A704A0020FABE /* ProfileDateAndDishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileDateAndDishCell.swift; path = ../ProfileDateAndDishCell.swift; sourceTree = "<group>"; };
+		791853FA1B2A704A0020FABE /* ProfileDateAndDishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileDateAndDishCell.xib; path = ../ProfileDateAndDishCell.xib; sourceTree = "<group>"; };
+		791853FD1B2A754D0020FABE /* HostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HostCell.swift; path = ../HostCell.swift; sourceTree = "<group>"; };
+		791853FE1B2A754D0020FABE /* HostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HostCell.xib; path = ../HostCell.xib; sourceTree = "<group>"; };
+		791854011B2A7A250020FABE /* OtherDishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherDishCell.swift; sourceTree = "<group>"; };
+		791854021B2A7A250020FABE /* OtherDishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherDishCell.xib; sourceTree = "<group>"; };
+		791854051B2A857C0020FABE /* cheesy_soup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cheesy_soup.jpg; sourceTree = "<group>"; };
+		791854061B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Strawberry-Rhubarb-Pie.jpg"; sourceTree = "<group>"; };
+		791854071B2A857C0020FABE /* frozen-margarita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frozen-margarita.jpg"; sourceTree = "<group>"; };
+		791854081B2A857C0020FABE /* popovers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = popovers.jpg; sourceTree = "<group>"; };
+		791854091B2A857C0020FABE /* salad.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salad.jpeg; sourceTree = "<group>"; };
+		7918540A1B2A857C0020FABE /* Sesame-Noodles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sesame-Noodles.jpg"; sourceTree = "<group>"; };
+		791854111B2A91500020FABE /* MembersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersCell.swift; sourceTree = "<group>"; };
+		791854121B2A91500020FABE /* MembersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersCell.xib; sourceTree = "<group>"; };
+		791854151B2A92040020FABE /* PendingMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingMemberCell.swift; sourceTree = "<group>"; };
+		791854161B2A92040020FABE /* PendingMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingMemberCell.xib; sourceTree = "<group>"; };
 		794F19E51B197A06002C8500 /* CookingClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794F19E91B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794F19EA1B197A06002C8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,18 +94,12 @@
 		794F1A1B1B280D22002C8500 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		794F1A1D1B280D55002C8500 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		794F1A1F1B280D8B002C8500 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
-		794F1A211B280DD1002C8500 /* PickADishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickADishViewController.swift; sourceTree = "<group>"; };
 		794F1A231B280DFC002C8500 /* NewPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
 		794F1A251B280E2D002C8500 /* AllRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRecipesViewController.swift; sourceTree = "<group>"; };
 		794F1A271B280E5D002C8500 /* ViewRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRecipeViewController.swift; sourceTree = "<group>"; };
 		794F1A291B281C21002C8500 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
-		794F1A2B1B281F02002C8500 /* DishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
-		794F1A2D1B281F87002C8500 /* HostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostCell.swift; sourceTree = "<group>"; };
-		794F1A2F1B28204A002C8500 /* OtherDishCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherDishCell.swift; sourceTree = "<group>"; };
 		794F1A311B2820F6002C8500 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		794F1A331B2822AC002C8500 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
-		794F1A371B28245F002C8500 /* PendingMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingMemberCell.swift; sourceTree = "<group>"; };
-		794F1A391B28247A002C8500 /* ExisitingMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExisitingMemberCell.swift; sourceTree = "<group>"; };
 		794F1A3B1B282539002C8500 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		794F1A3D1B282569002C8500 /* AdminTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +149,12 @@
 				794F19F41B197A06002C8500 /* Images.xcassets */,
 				794F19F61B197A06002C8500 /* LaunchScreen.xib */,
 				794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */,
+				791854051B2A857C0020FABE /* cheesy_soup.jpg */,
+				791854061B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg */,
+				791854071B2A857C0020FABE /* frozen-margarita.jpg */,
+				791854081B2A857C0020FABE /* popovers.jpg */,
+				791854091B2A857C0020FABE /* salad.jpeg */,
+				7918540A1B2A857C0020FABE /* Sesame-Noodles.jpg */,
 				794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */,
 				794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */,
 				794F19E81B197A06002C8500 /* Supporting Files */,
@@ -175,17 +203,22 @@
 				794F1A171B280CC2002C8500 /* StartClubViewController.swift */,
 				794F1A191B280CE2002C8500 /* JoinClubViewController.swift */,
 				794F1A1B1B280D22002C8500 /* ProfileViewController.swift */,
+				791853F91B2A704A0020FABE /* ProfileDateAndDishCell.swift */,
+				791853FA1B2A704A0020FABE /* ProfileDateAndDishCell.xib */,
+				791853F71B2A6B930020FABE /* PickADishViewController.swift */,
 				794F1A1D1B280D55002C8500 /* AccountViewController.swift */,
 				794F1A1F1B280D8B002C8500 /* AddRecipeViewController.swift */,
-				794F1A211B280DD1002C8500 /* PickADishViewController.swift */,
-				794F1A2B1B281F02002C8500 /* DishCell.swift */,
 				794F1A311B2820F6002C8500 /* EventViewController.swift */,
+				791854011B2A7A250020FABE /* OtherDishCell.swift */,
+				791854021B2A7A250020FABE /* OtherDishCell.xib */,
+				791853FD1B2A754D0020FABE /* HostCell.swift */,
+				791853FE1B2A754D0020FABE /* HostCell.xib */,
 				794F1A331B2822AC002C8500 /* MembersViewController.swift */,
-				794F1A371B28245F002C8500 /* PendingMemberCell.swift */,
-				794F1A391B28247A002C8500 /* ExisitingMemberCell.swift */,
+				791854111B2A91500020FABE /* MembersCell.swift */,
+				791854121B2A91500020FABE /* MembersCell.xib */,
+				791854151B2A92040020FABE /* PendingMemberCell.swift */,
+				791854161B2A92040020FABE /* PendingMemberCell.xib */,
 				794F1A3B1B282539002C8500 /* CalendarViewController.swift */,
-				794F1A2D1B281F87002C8500 /* HostCell.swift */,
-				794F1A2F1B28204A002C8500 /* OtherDishCell.swift */,
 				794F1A231B280DFC002C8500 /* NewPasswordViewController.swift */,
 				794F1A251B280E2D002C8500 /* AllRecipesViewController.swift */,
 				794F1A291B281C21002C8500 /* RecipeCell.swift */,
@@ -274,10 +307,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7918540C1B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg in Resources */,
+				7918540E1B2A857C0020FABE /* popovers.jpg in Resources */,
+				791854101B2A857C0020FABE /* Sesame-Noodles.jpg in Resources */,
+				791854181B2A92040020FABE /* PendingMemberCell.xib in Resources */,
+				7918540F1B2A857C0020FABE /* salad.jpeg in Resources */,
 				794F1A101B199CAF002C8500 /* IMG_3375.jpg in Resources */,
+				791854001B2A754D0020FABE /* HostCell.xib in Resources */,
+				791853FC1B2A704A0020FABE /* ProfileDateAndDishCell.xib in Resources */,
 				794F19F31B197A06002C8500 /* Main.storyboard in Resources */,
+				791854141B2A91500020FABE /* MembersCell.xib in Resources */,
+				7918540B1B2A857C0020FABE /* cheesy_soup.jpg in Resources */,
+				791854041B2A7A250020FABE /* OtherDishCell.xib in Resources */,
 				794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */,
 				794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */,
+				7918540D1B2A857C0020FABE /* frozen-margarita.jpg in Resources */,
 				794F19F51B197A06002C8500 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,26 +342,26 @@
 			files = (
 				794F1A201B280D8B002C8500 /* AddRecipeViewController.swift in Sources */,
 				794F1A1C1B280D22002C8500 /* ProfileViewController.swift in Sources */,
-				794F1A2E1B281F87002C8500 /* HostCell.swift in Sources */,
+				791853FB1B2A704A0020FABE /* ProfileDateAndDishCell.swift in Sources */,
 				794F1A1A1B280CE2002C8500 /* JoinClubViewController.swift in Sources */,
 				794F1A1E1B280D55002C8500 /* AccountViewController.swift in Sources */,
 				794F1A3E1B282569002C8500 /* AdminTableViewController.swift in Sources */,
-				794F1A381B28245F002C8500 /* PendingMemberCell.swift in Sources */,
 				794F19F01B197A06002C8500 /* ViewController.swift in Sources */,
-				794F1A2C1B281F02002C8500 /* DishCell.swift in Sources */,
 				794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */,
-				794F1A301B28204A002C8500 /* OtherDishCell.swift in Sources */,
+				791854131B2A91500020FABE /* MembersCell.swift in Sources */,
 				794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */,
+				791854031B2A7A250020FABE /* OtherDishCell.swift in Sources */,
 				794F1A341B2822AC002C8500 /* MembersViewController.swift in Sources */,
 				794F1A3C1B282539002C8500 /* CalendarViewController.swift in Sources */,
 				794F1A281B280E5D002C8500 /* ViewRecipeViewController.swift in Sources */,
-				794F1A221B280DD1002C8500 /* PickADishViewController.swift in Sources */,
 				794F1A261B280E2D002C8500 /* AllRecipesViewController.swift in Sources */,
 				794F1A241B280DFC002C8500 /* NewPasswordViewController.swift in Sources */,
-				794F1A3A1B28247A002C8500 /* ExisitingMemberCell.swift in Sources */,
+				791853F81B2A6B930020FABE /* PickADishViewController.swift in Sources */,
 				794F1A2A1B281C21002C8500 /* RecipeCell.swift in Sources */,
 				794F1A181B280CC2002C8500 /* StartClubViewController.swift in Sources */,
 				794F1A321B2820F6002C8500 /* EventViewController.swift in Sources */,
+				791853FF1B2A754D0020FABE /* HostCell.swift in Sources */,
+				791854171B2A92040020FABE /* PendingMemberCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +559,7 @@
 				794F1A091B197A06002C8500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		794F1A0A1B197A06002C8500 /* Build configuration list for PBXNativeTarget "CookingClubTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +568,7 @@
 				794F1A0C1B197A06002C8500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

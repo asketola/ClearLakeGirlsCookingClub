@@ -1,19 +1,18 @@
 //
-//  ExisitingMemberCell.swift
+//  ProfileDateAndDishCell.swift
 //  CookingClub
 //
-//  Created by Annemarie Ketola on 6/10/15.
+//  Created by Annemarie Ketola on 6/11/15.
 //  Copyright (c) 2015 Annemarie Ketola. All rights reserved.
 //
 
 import UIKit
 
-class ExisitingMemberCell: UITableViewCell {
+class ProfileDateAndDishCell: UITableViewCell {
+    
+    @IBOutlet weak var dishLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
 
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var username: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,5 +23,5 @@ class ExisitingMemberCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }
