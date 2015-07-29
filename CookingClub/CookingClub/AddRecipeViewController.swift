@@ -23,6 +23,8 @@ class AddRecipeViewController: UIViewController {
     @IBOutlet weak var recipeLinkTextField: UITextField!
     @IBOutlet weak var recipeImage: UIImageView!
     
+    var hostimage = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +33,7 @@ class AddRecipeViewController: UIViewController {
         recipeLinkLabel.text = "Recipe Link:"
         
         // get from Parse the userImage, placeholder there right now
-        userImage.image = UIImage(contentsOfFile: "IMG_3375.jpg")
+        userImage.image = UIImage(named: "ASK_Profile_Circle.png")
         
         // Do any additional setup after loading the view.
     }

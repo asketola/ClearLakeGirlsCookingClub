@@ -19,7 +19,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     // TableView
     @IBOutlet weak var upcomingCookigClubDatesTableView: UITableView!
     
-    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "Second Side", " Second Salad/Soup2"]
+    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "2nd Side", " 2nd Salad/Soup"]
     var datesForTableView = ["Monday, June 1, 2015", "Monday, June 8, 2015", "Monday, June 15, 2015", "Monday, June 22, 2015", "Monday, June 29, 2015", "Monday, July 6, 2015", "Monday, July 13, 2015", "Monday, July 20, 2015", "Monday, July 27, 2015"]
     
     
@@ -65,19 +65,26 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
+        upcomingCookigClubDatesTableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("SHOW_EVENT", sender: ProfileDateAndDishCell())
     }
     
     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        println("prepare for segue called")
+        if segue.identifier == "SHOW_EVENT" {
+            if let destination = segue.destinationViewController as? EventViewController {
+                if let tableIndex = upcomingCookigClubDatesTableView.indexPathForSelectedRow()?.row {
+                    // sends the info over to the next view controller
+                    destination.tablename = itemsForTableView[tableIndex]
+                    destination.tabledate = datesForTableView[tableIndex]
+                }
+                
+            }
+
+        }
+
     }
-    */
+
 
 }

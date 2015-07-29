@@ -12,7 +12,7 @@ class PickADishViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var pickADishTableView: UITableView!
     
-    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "Second Side", " Second Salad/Soup2"]
+    var itemsForTableView = ["Entree", "Dessert", "Appetizer", "Salad/Soup", "Side", "Bread", "Drink", "2nd Side", "2nd Salad/Soup"]
     
     
     override func viewDidLoad() {

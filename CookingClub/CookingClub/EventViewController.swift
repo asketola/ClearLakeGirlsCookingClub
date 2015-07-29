@@ -7,22 +7,31 @@
 //
 
 import UIKit
+import MapKit
 
 class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var dateLabel: UILabel!
-    var hostNameArray = ["IMG_3360.jpg", "Anne Ketola", "(832)-524-5841", "Entree"]
-    var otherDishesArray = ["IMG_3360.jpg", "Jenny Ortis", "(281)-226-4793", "Dessrt"]
+    var hostNameArray = ["ASK_Profile_Circle.png", "Anne Ketola", "(555)-555-5555", "Entree"]
+    var otherDishesArray = ["ASK_Profile_Circle.png", "Jenny Ortis", "(555)-555-5555", "Dessrt"]
     
     @IBOutlet weak var hostTableView: UITableView!
     @IBOutlet weak var otherDishesTableView: UITableView!
     
+    @IBOutlet weak var hostMap: MKMapView!
+    
+    var tablename = String()
+    var tabledate = String()
+
     
     // not sure how to hook up map
 //    @IBOutlet weak var hostMapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        println("here is passovers: \(tabledate) \(tablename)")
+        dateLabel.text = "Monday June 5, 2015"
         
         var hostNib = UINib(nibName: "HostCell", bundle: nil)
         hostTableView.registerNib(hostNib, forCellReuseIdentifier: "HostCell")
@@ -67,16 +76,16 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.phoneLabel?.text = self.hostNameArray[2]
             cell.dishLabel?.text = self.hostNameArray[3]
             var imageString = self.hostNameArray[0]
-            cell.userImage?.image = UIImage(contentsOfFile:imageString)
+            cell.userImage?.image = UIImage(named:imageString)
             
             return cell
         } else {
-            var cell:OtherDishCell = self.hostTableView.dequeueReusableCellWithIdentifier("OtherDishCell") as! OtherDishCell
+            var cell:OtherDishCell = self.otherDishesTableView.dequeueReusableCellWithIdentifier("OtherDishCell") as! OtherDishCell
             
             cell.usernameOtherLabel?.text = self.otherDishesArray[1]
             cell.dishOtherLabel?.text = self.otherDishesArray[3]
             var imageString = self.otherDishesArray[0]
-            cell.userOtherImage?.image = UIImage(contentsOfFile:imageString)
+            cell.userOtherImage?.image = UIImage(named:imageString)
             
             return cell
         }
@@ -88,16 +97,24 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
+        hostTableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("SHOW_RECIPE_HOST", sender: HostCell())
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        println("prepare for segue called")
+        if segue.identifier == "SHOW_RECIPE_HOST" {
+            if let destination = segue.destinationViewController as? AddRecipeViewController {
+                if let tableIndex = hostTableView.indexPathForSelectedRow()?.row {
+                    // sends the info over to the next view controller
+                    destination.hostimage = hostNameArray[tableIndex]
+
+                }
+                
+            }
+            
+        }
+        
     }
-    */
 
 }

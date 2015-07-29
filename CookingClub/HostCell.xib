@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mvQ-FE-BF7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASK_Profile_Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="mvQ-FE-BF7">
                         <rect key="frame" x="8" y="8" width="90" height="90"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="90" id="8tS-9U-Ufy"/>
@@ -40,6 +40,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="mvQ-FE-BF7" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6z3-Dn-5q2"/>
                     <constraint firstItem="eRe-0v-iVc" firstAttribute="leading" secondItem="mvQ-FE-BF7" secondAttribute="trailing" constant="8" id="INp-Ga-dDv"/>
@@ -63,7 +64,10 @@
                 <outlet property="userImage" destination="mvQ-FE-BF7" id="sgP-EI-Ukz"/>
                 <outlet property="usernameLabel" destination="mbV-YT-Pij" id="7xu-aW-rqc"/>
             </connections>
-            <point key="canvasLocation" x="360.5" y="326.5"/>
+            <point key="canvasLocation" x="362.5" y="325.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ASK_Profile_Circle.png" width="257" height="285"/>
+    </resources>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEL-kl-cfx">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASK_Profile_Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="rEL-kl-cfx">
                         <rect key="frame" x="8" y="6" width="90" height="90"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="90" id="fFt-sG-Wxz"/>
@@ -34,6 +34,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="rEL-kl-cfx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6Vk-Ni-bWX"/>
                     <constraint firstItem="xx7-Ce-Rgh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LdA-KL-DTo"/>
@@ -43,6 +44,7 @@
                     <constraint firstItem="qIm-RS-9TI" firstAttribute="centerY" secondItem="rEL-kl-cfx" secondAttribute="centerY" constant="-0.5" id="h7Y-GW-Mql"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="dishOtherLabel" destination="xx7-Ce-Rgh" id="Af6-28-iCu"/>
                 <outlet property="userOtherImage" destination="rEL-kl-cfx" id="Fin-jX-Rn2"/>
@@ -51,4 +53,7 @@
             <point key="canvasLocation" x="616" y="387.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ASK_Profile_Circle.png" width="257" height="285"/>
+    </resources>
 </document>

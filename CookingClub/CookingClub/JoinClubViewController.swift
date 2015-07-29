@@ -11,7 +11,7 @@ import UIKit
 class JoinClubViewController: UIViewController {
     
     @IBOutlet weak var joinClubNameTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var retypePasswordTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -36,5 +36,7 @@ class JoinClubViewController: UIViewController {
         // Send things to Parse
     }
 
+    @IBAction func joinButtonPressed(sender: AnyObject) {
+    }
 
 }

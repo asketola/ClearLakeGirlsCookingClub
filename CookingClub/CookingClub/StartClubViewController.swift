@@ -11,7 +11,7 @@ import UIKit
 class StartClubViewController: UIViewController {
     
     @IBOutlet weak var clubNameTextField: UITextField!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var retypePasswordTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -35,5 +35,9 @@ class StartClubViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
 
+
+    @IBAction func startButtonPressed(sender: AnyObject) {
+        
+    }
 }
 

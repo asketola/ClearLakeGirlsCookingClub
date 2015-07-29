@@ -24,6 +24,10 @@
 		791854141B2A91500020FABE /* MembersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791854121B2A91500020FABE /* MembersCell.xib */; };
 		791854171B2A92040020FABE /* PendingMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791854151B2A92040020FABE /* PendingMemberCell.swift */; };
 		791854181B2A92040020FABE /* PendingMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791854161B2A92040020FABE /* PendingMemberCell.xib */; };
+		79488AFE1B682EC500863A8C /* ASK_Profile_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 79488AFD1B682EC500863A8C /* ASK_Profile_Circle.png */; };
+		79488B001B69315300863A8C /* food-cooking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79488AFF1B69315300863A8C /* food-cooking.jpg */; };
+		79488B031B695DEE00863A8C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B011B695DEE00863A8C /* Bolts.framework */; };
+		79488B041B695DEE00863A8C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B021B695DEE00863A8C /* Parse.framework */; };
 		794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EA1B197A06002C8500 /* AppDelegate.swift */; };
 		794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */; };
 		794F19F01B197A06002C8500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EF1B197A06002C8500 /* ViewController.swift */; };
@@ -76,6 +80,10 @@
 		791854121B2A91500020FABE /* MembersCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersCell.xib; sourceTree = "<group>"; };
 		791854151B2A92040020FABE /* PendingMemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingMemberCell.swift; sourceTree = "<group>"; };
 		791854161B2A92040020FABE /* PendingMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PendingMemberCell.xib; sourceTree = "<group>"; };
+		79488AFD1B682EC500863A8C /* ASK_Profile_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASK_Profile_Circle.png; sourceTree = "<group>"; };
+		79488AFF1B69315300863A8C /* food-cooking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "food-cooking.jpg"; sourceTree = "<group>"; };
+		79488B011B695DEE00863A8C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		79488B021B695DEE00863A8C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		794F19E51B197A06002C8500 /* CookingClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794F19E91B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794F19EA1B197A06002C8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79488B041B695DEE00863A8C /* Parse.framework in Frameworks */,
+				79488B031B695DEE00863A8C /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +135,8 @@
 		794F19DC1B197A05002C8500 = {
 			isa = PBXGroup;
 			children = (
+				79488B011B695DEE00863A8C /* Bolts.framework */,
+				79488B021B695DEE00863A8C /* Parse.framework */,
 				794F19E71B197A06002C8500 /* CookingClub */,
 				794F1A001B197A06002C8500 /* CookingClubTests */,
 				794F19E61B197A06002C8500 /* Products */,
@@ -148,7 +160,9 @@
 				794F1A161B280C84002C8500 /* Controllers */,
 				794F19F41B197A06002C8500 /* Images.xcassets */,
 				794F19F61B197A06002C8500 /* LaunchScreen.xib */,
+				79488AFF1B69315300863A8C /* food-cooking.jpg */,
 				794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */,
+				79488AFD1B682EC500863A8C /* ASK_Profile_Circle.png */,
 				791854051B2A857C0020FABE /* cheesy_soup.jpg */,
 				791854061B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg */,
 				791854071B2A857C0020FABE /* frozen-margarita.jpg */,
@@ -309,6 +323,7 @@
 			files = (
 				7918540C1B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg in Resources */,
 				7918540E1B2A857C0020FABE /* popovers.jpg in Resources */,
+				79488B001B69315300863A8C /* food-cooking.jpg in Resources */,
 				791854101B2A857C0020FABE /* Sesame-Noodles.jpg in Resources */,
 				791854181B2A92040020FABE /* PendingMemberCell.xib in Resources */,
 				7918540F1B2A857C0020FABE /* salad.jpeg in Resources */,
@@ -319,6 +334,7 @@
 				791854141B2A91500020FABE /* MembersCell.xib in Resources */,
 				7918540B1B2A857C0020FABE /* cheesy_soup.jpg in Resources */,
 				791854041B2A7A250020FABE /* OtherDishCell.xib in Resources */,
+				79488AFE1B682EC500863A8C /* ASK_Profile_Circle.png in Resources */,
 				794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */,
 				794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */,
 				7918540D1B2A857C0020FABE /* frozen-margarita.jpg in Resources */,
@@ -490,6 +506,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CookingClub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +520,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CookingClub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

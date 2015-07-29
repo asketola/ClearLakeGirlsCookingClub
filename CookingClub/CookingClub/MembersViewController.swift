@@ -10,7 +10,7 @@ import UIKit
 
 class MembersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var pendingMemberArray = ["IMG_3360.jpg", "Rachel Frick"]
+    var pendingMemberArray = ["ASK_Profile_Circle.png", "Rachel Frick"]
     
     @IBOutlet weak var pendingMemberTableView: UITableView!
     @IBOutlet weak var memberTableView: UITableView!
