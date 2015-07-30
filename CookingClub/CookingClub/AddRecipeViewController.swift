@@ -132,8 +132,6 @@ class AddRecipeViewController: UIViewController, UITextFieldDelegate, UIImagePic
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-//            recipeImage.contentMode = .ScaleAspectFit
-//            recipeImage.image = pickedImage
             addPhotoLabel.hidden = true
             photoButton.setBackgroundImage(pickedImage, forState: UIControlState.Normal)
         }
@@ -191,12 +189,6 @@ class AddRecipeViewController: UIViewController, UITextFieldDelegate, UIImagePic
         recipeTextField.resignFirstResponder()
         recipeLinkTextField.resignFirstResponder()
     }
-    
-//    func textFieldDidBeginEditing(textField: UITextField) {
-//        if textField == quoteTextField {
-//            self.animateTextField(false)
-//        }
-//    }
     
     
     func animateTextField(up: Bool) {
