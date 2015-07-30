@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewRecipeViewController: UIViewController {
     
@@ -17,11 +18,18 @@ class ViewRecipeViewController: UIViewController {
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var userImage: UIImageView!
     
+    // the Parse object we passed from the previous view controller
+    var dishData: PFObject!
+    var dishDataImage: UIImage!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        recipeLinkLabel.text = dishData["recipeLink"] as? String
+        recipeNameLabel.text = dishData["recipeName"] as? String
+        quoteLabel.text = dishData["quote"] as? String
+        recipeImage.image = dishDataImage
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,14 +41,5 @@ class ViewRecipeViewController: UIViewController {
         // do nothing, just go back to the RecipeCollectionView
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

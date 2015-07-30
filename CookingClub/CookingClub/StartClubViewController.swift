@@ -17,10 +17,14 @@ class StartClubViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     
+    var usernameStart: String!
+    var passwordStart: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        passwordTextField.text = passwordStart
+        retypePasswordTextField.text = usernameStart
     }
 
     override func didReceiveMemoryWarning() {

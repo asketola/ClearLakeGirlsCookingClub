@@ -21,8 +21,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food-cooking.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pUm-kL-sPe">
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlv-fl-00L">
+                                <rect key="frame" x="16" y="530" width="280" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X9t-97-Bw1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <state key="normal" title="Create a Club">
+                                    <color key="titleColor" red="0.86274509803921573" green="0.14901960784313725" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGH-2m-c0J"/>
+                                    <segue destination="zQy-OD-M3m" kind="show" identifier="SHOW_START_CLUB" id="NCf-Tf-7Rh"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-Rl-kb1">
-                                <rect key="frame" x="304" y="472" width="280" height="50"/>
+                                <rect key="frame" x="304" y="530" width="280" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1vk-7f-FY0"/>
@@ -32,22 +47,8 @@
                                     <color key="titleColor" red="0.86274509803921573" green="0.14901960784313725" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Nu7-er-Xi5" kind="show" id="2Is-Uv-rwA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-OU-P8l">
-                                <rect key="frame" x="16" y="530" width="568" height="50"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7uk-LW-vKb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.86274509803921573" green="0.14901960784313725" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="9Lk-X1-Fvc" kind="show" id="6S3-z7-3lK"/>
+                                    <action selector="joinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHO-70-j4z"/>
+                                    <segue destination="Nu7-er-Xi5" kind="show" identifier="SHOW_JOIN_CLUB" id="2Is-Uv-rwA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking Club" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leZ-uz-Nlz">
@@ -59,26 +60,49 @@
                                 <color key="textColor" red="0.97885982991681519" green="0.1868610931317288" blue="0.098142108513742818" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlv-fl-00L">
-                                <rect key="frame" x="16" y="472" width="280" height="50"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QOq-da-kcA">
+                                <rect key="frame" x="16" y="434" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IMd-sc-etN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gYJ-NN-nVz">
+                                <rect key="frame" x="16" y="396" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5SU-wt-FsY"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4R-OU-P8l">
+                                <rect key="frame" x="16" y="472" width="568" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="X9t-97-Bw1"/>
+                                    <constraint firstAttribute="height" constant="50" id="7uk-LW-vKb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
-                                <state key="normal" title="Create a Club">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="0.86274509803921573" green="0.14901960784313725" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zQy-OD-M3m" kind="show" id="NCf-Tf-7Rh"/>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h74-ql-PfO"/>
+                                    <segue destination="9Lk-X1-Fvc" kind="show" identifier="&quot;SHOW_PROFILE&quot;" id="6S3-z7-3lK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="leZ-uz-Nlz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="1jt-dQ-G7u"/>
+                            <constraint firstItem="gYJ-NN-nVz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Gt-nY-G0p"/>
+                            <constraint firstItem="QOq-da-kcA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5P8-4a-bPA"/>
                             <constraint firstItem="wlv-fl-00L" firstAttribute="width" secondItem="2aa-Rl-kb1" secondAttribute="width" id="7Pq-32-j9d"/>
+                            <constraint firstItem="z4R-OU-P8l" firstAttribute="top" secondItem="QOq-da-kcA" secondAttribute="bottom" constant="8" id="BkB-hQ-8eZ"/>
                             <constraint firstItem="pUm-kL-sPe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="HhS-9n-xfy"/>
+                            <constraint firstItem="gYJ-NN-nVz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JHE-Sw-wvw"/>
+                            <constraint firstItem="wlv-fl-00L" firstAttribute="top" secondItem="z4R-OU-P8l" secondAttribute="bottom" constant="8" id="LXd-KK-qfY"/>
                             <constraint firstItem="2aa-Rl-kb1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LZ2-OU-eX2"/>
                             <constraint firstItem="leZ-uz-Nlz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LZy-2P-P5b"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z4R-OU-P8l" secondAttribute="bottom" constant="20" id="MpO-pc-pSp"/>
@@ -88,13 +112,30 @@
                             <constraint firstItem="2aa-Rl-kb1" firstAttribute="leading" secondItem="wlv-fl-00L" secondAttribute="trailing" constant="8" id="WkY-oF-Mzr"/>
                             <constraint firstItem="pUm-kL-sPe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="YQS-4U-0Se"/>
                             <constraint firstItem="z4R-OU-P8l" firstAttribute="top" secondItem="wlv-fl-00L" secondAttribute="bottom" constant="8" id="bvB-DU-1nf"/>
+                            <constraint firstItem="2aa-Rl-kb1" firstAttribute="top" secondItem="z4R-OU-P8l" secondAttribute="bottom" constant="8" id="dtY-lf-W4C"/>
                             <constraint firstItem="z4R-OU-P8l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eMp-1p-hyn"/>
                             <constraint firstItem="z4R-OU-P8l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hZe-lD-VqN"/>
                             <constraint firstItem="wlv-fl-00L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hn6-2F-nna"/>
+                            <constraint firstItem="QOq-da-kcA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hxX-EM-aMe"/>
+                            <constraint firstItem="QOq-da-kcA" firstAttribute="top" secondItem="gYJ-NN-nVz" secondAttribute="bottom" constant="8" id="oFh-OU-eoY"/>
                             <constraint firstItem="leZ-uz-Nlz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pCo-AM-KSK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2aa-Rl-kb1" secondAttribute="bottom" constant="20" id="rZ9-fq-s3t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wlv-fl-00L" secondAttribute="bottom" constant="20" id="yZ7-AP-tmb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Uy5-q6-KCY"/>
+                                <exclude reference="bvB-DU-1nf"/>
+                                <exclude reference="MpO-pc-pSp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="R3A-9W-OuG"/>
+                    <connections>
+                        <outlet property="cookingClubLabel" destination="leZ-uz-Nlz" id="3Nf-ol-p0b"/>
+                        <outlet property="passwordTextField" destination="QOq-da-kcA" id="O8Z-oB-oYP"/>
+                        <outlet property="usernameTextField" destination="gYJ-NN-nVz" id="TRw-y1-A55"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,32 +159,50 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name your Club (keep it simple)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jlG-o0-XIi">
                                 <rect key="frame" x="16" y="84" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="ZHS-5G-Kd3"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s0x-ni-ZVM">
                                 <rect key="frame" x="16" y="122" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="di8-i1-cqI"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (6 characters)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-g0-Jtz">
                                 <rect key="frame" x="16" y="160" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="ztQ-yJ-wa3"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-Oe-Gr3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-Oe-Gr3">
                                 <rect key="frame" x="16" y="198" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="54e-Hd-P0s"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-OJ-NDf">
                                 <rect key="frame" x="16" y="236" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="yo8-av-29q"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bdc-Ai-huc">
                                 <rect key="frame" x="16" y="274" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zQy-OD-M3m" id="bAp-9w-aDc"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a Cooking Club" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUX-Tv-9RH">
                                 <rect key="frame" x="182" y="28" width="237" height="48"/>
@@ -769,17 +828,26 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="There once was a man from Nantucket. . . . ." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-bW-UWe">
                                 <rect key="frame" x="124" y="107" width="460" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="s9X-an-8hG" id="9FV-3Q-i0q"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chicken Curry on Brioche Bun" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUz-mX-AzG">
                                 <rect key="frame" x="16" y="484" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="s9X-an-8hG" id="GSf-BY-1b3"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.epicurious.com/chicken-curry-burger" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-02-BTe">
                                 <rect key="frame" x="16" y="562" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="s9X-an-8hG" id="ZTs-9V-9FS"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Quote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31n-FX-gft">
                                 <rect key="frame" x="124" y="67" width="97" height="32"/>
@@ -799,39 +867,57 @@
                                 <color key="textColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="IMG_3375.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hdH-VE-GdW">
+                            <button opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYC-iS-6vA">
                                 <rect key="frame" x="16" y="180" width="568" height="256"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.85535037879999998" green="0.85535037879999998" blue="0.85535037879999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dishImageButtonPressed:" destination="s9X-an-8hG" eventType="touchUpInside" id="hWG-ei-4RF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc6-qk-Pnd">
+                                <rect key="frame" x="241" y="288" width="119" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fwM-he-FxE" firstAttribute="top" secondItem="hdH-VE-GdW" secondAttribute="bottom" constant="8" id="0Vg-ky-yDa"/>
-                            <constraint firstItem="hdH-VE-GdW" firstAttribute="trailing" secondItem="CfK-6t-kkF" secondAttribute="trailingMargin" id="3ac-ev-t3h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TRb-WU-1V9" secondAttribute="trailing" constant="-16" id="7O0-FF-7G1"/>
                             <constraint firstItem="qAj-nP-0oC" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="DLN-tx-LPx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ke7-02-BTe" secondAttribute="trailing" id="ERp-3L-8qF"/>
-                            <constraint firstItem="hdH-VE-GdW" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="FWL-jo-3bG"/>
                             <constraint firstItem="sMW-bW-UWe" firstAttribute="trailing" secondItem="CfK-6t-kkF" secondAttribute="trailingMargin" id="FbR-Yq-tJp"/>
                             <constraint firstItem="TRb-WU-1V9" firstAttribute="top" secondItem="pJ6-zm-dXw" secondAttribute="bottom" id="GhI-cy-06e"/>
                             <constraint firstItem="Wqr-Dy-1FB" firstAttribute="top" secondItem="YUz-mX-AzG" secondAttribute="bottom" constant="8" id="HZQ-Ov-L2k"/>
                             <constraint firstItem="TRb-WU-1V9" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" constant="-16" id="HaB-Qz-vmF"/>
                             <constraint firstItem="fwM-he-FxE" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="IFy-4B-Agw"/>
                             <constraint firstItem="sMW-bW-UWe" firstAttribute="centerY" secondItem="qAj-nP-0oC" secondAttribute="centerY" id="Jgs-vr-cnN"/>
+                            <constraint firstItem="kYC-iS-6vA" firstAttribute="centerX" secondItem="Jc6-qk-Pnd" secondAttribute="centerX" id="Lg2-QS-U4N"/>
                             <constraint firstItem="sMW-bW-UWe" firstAttribute="top" secondItem="31n-FX-gft" secondAttribute="bottom" constant="8" id="MtM-Xg-avW"/>
                             <constraint firstItem="qAj-nP-0oC" firstAttribute="top" secondItem="TRb-WU-1V9" secondAttribute="bottom" constant="8" id="NUh-ad-79Q"/>
+                            <constraint firstItem="kYC-iS-6vA" firstAttribute="trailing" secondItem="CfK-6t-kkF" secondAttribute="trailingMargin" id="PbM-k6-3Wn"/>
                             <constraint firstItem="ke7-02-BTe" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="RSR-Su-bXT"/>
                             <constraint firstItem="31n-FX-gft" firstAttribute="leading" secondItem="qAj-nP-0oC" secondAttribute="trailing" constant="8" id="Xdo-PE-JyC"/>
                             <constraint firstItem="YUz-mX-AzG" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="aB7-QT-HF3"/>
                             <constraint firstItem="sMW-bW-UWe" firstAttribute="leading" secondItem="qAj-nP-0oC" secondAttribute="trailing" constant="8" id="b6h-Lh-Eas"/>
+                            <constraint firstItem="fwM-he-FxE" firstAttribute="top" secondItem="kYC-iS-6vA" secondAttribute="bottom" constant="8" id="bDu-zM-nAO"/>
+                            <constraint firstItem="kYC-iS-6vA" firstAttribute="centerY" secondItem="Jc6-qk-Pnd" secondAttribute="centerY" constant="0.5" id="bxa-Xp-wX3"/>
                             <constraint firstItem="qvH-Mb-82g" firstAttribute="top" secondItem="ke7-02-BTe" secondAttribute="bottom" constant="8" id="eAh-0q-IyU"/>
-                            <constraint firstItem="hdH-VE-GdW" firstAttribute="top" secondItem="qAj-nP-0oC" secondAttribute="bottom" constant="8" id="f3g-Sr-lrj"/>
                             <constraint firstItem="ke7-02-BTe" firstAttribute="top" secondItem="Wqr-Dy-1FB" secondAttribute="bottom" constant="8" id="hac-Sl-Mt0"/>
                             <constraint firstItem="Wqr-Dy-1FB" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="icQ-4O-zI2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YUz-mX-AzG" secondAttribute="trailing" id="kZY-Q2-GKa"/>
+                            <constraint firstItem="kYC-iS-6vA" firstAttribute="top" secondItem="qAj-nP-0oC" secondAttribute="bottom" constant="8" id="mbL-sX-E06"/>
                             <constraint firstItem="YUz-mX-AzG" firstAttribute="top" secondItem="fwM-he-FxE" secondAttribute="bottom" constant="8" id="mr4-06-S7F"/>
+                            <constraint firstItem="kYC-iS-6vA" firstAttribute="leading" secondItem="CfK-6t-kkF" secondAttribute="leadingMargin" id="xl4-AU-3nS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addPhotoLabel" destination="Jc6-qk-Pnd" id="4jZ-SP-FXP"/>
+                        <outlet property="photoButton" destination="kYC-iS-6vA" id="pmC-TB-Vue"/>
                         <outlet property="quoteLabel" destination="31n-FX-gft" id="08T-dk-nBJ"/>
                         <outlet property="quoteTextField" destination="sMW-bW-UWe" id="rFS-As-0mR"/>
                         <outlet property="recipeHeaderLabel" destination="hPe-uu-Hdn" id="1JZ-7a-zq6"/>
@@ -839,6 +925,7 @@
                         <outlet property="recipeLinkTextField" destination="ke7-02-BTe" id="BXe-x8-ZUr"/>
                         <outlet property="recipeNameLabel" destination="fwM-he-FxE" id="3kl-Ht-Mhi"/>
                         <outlet property="recipeTextField" destination="YUz-mX-AzG" id="ikC-ZK-GaH"/>
+                        <outlet property="saveButton" destination="LDq-4N-czN" id="o8c-yW-ozr"/>
                         <outlet property="userImage" destination="qAj-nP-0oC" id="mtJ-1k-oWk"/>
                     </connections>
                 </viewController>
@@ -954,12 +1041,18 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fhe-1E-yTz" id="ojN-RD-o5f"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="anneKetola@email.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MY6-kb-p29">
                                 <rect key="frame" x="8" y="326" width="584" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fhe-1E-yTz" id="tRc-te-VPA"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Anne Ketola " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-yo-RbY">
                                 <rect key="frame" x="8" y="288" width="584" height="30"/>
@@ -969,6 +1062,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fhe-1E-yTz" id="Fws-Cn-shA"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY4-Sa-020">
                                 <rect key="frame" x="8" y="530" width="584" height="50"/>
@@ -1001,6 +1097,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Fhe-1E-yTz" id="bNI-gt-8zL"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -1093,16 +1192,25 @@
                                 <rect key="frame" x="16" y="247" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LF9-Fd-anF" id="NEP-ql-f5O"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password (6 characters)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Se0-yB-HgN">
                                 <rect key="frame" x="16" y="285" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LF9-Fd-anF" id="fyO-se-AC4"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1a0-VT-7GK">
                                 <rect key="frame" x="16" y="323" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LF9-Fd-anF" id="2gm-O8-BvH"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -1172,32 +1280,50 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the Club you are Joining" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dI-bb-neQ">
                                 <rect key="frame" x="16" y="84" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="Auq-8T-4bJ"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FGN-bb-ni2">
                                 <rect key="frame" x="16" y="122" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="PqC-cg-5aB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (6 characters)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGf-Yj-oyG">
                                 <rect key="frame" x="16" y="160" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="v8j-Mb-pam"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1T-Dg-9Gr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1T-Dg-9Gr">
                                 <rect key="frame" x="16" y="198" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="NFs-T2-8LH"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dd3-c2-FIP">
                                 <rect key="frame" x="16" y="236" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="iXs-mj-5rR"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t85-YP-bkr">
                                 <rect key="frame" x="16" y="274" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nu7-er-Xi5" id="Rxu-AD-vFD"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join a Cooking Club" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM1-98-rxh">
                                 <rect key="frame" x="187" y="28" width="228" height="48"/>
@@ -1300,8 +1426,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;There once was a man from Nantucket, who went and sat on a bucket&quot; ~ best quote that night!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-0y-7JJ">
-                                <rect key="frame" x="124" y="72" width="460" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.epicurious.com/chicken-curry-burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y14-Hr-Cc1">
+                                <rect key="frame" x="16" y="560" width="320" height="32"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <color key="textColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1319,8 +1445,8 @@
                                     <constraint firstAttribute="height" constant="100" id="RpA-Os-W1N"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.epicurious.com/chicken-curry-burger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y14-Hr-Cc1">
-                                <rect key="frame" x="16" y="560" width="320" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;There once was a man from Nantucket, who went and sat on a bucket&quot; ~ best quote that night!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-0y-7JJ">
+                                <rect key="frame" x="124" y="72" width="460" height="100"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <color key="textColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1411,7 +1537,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="149" height="137"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_3375.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nCl-5L-KyL">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dish.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nCl-5L-KyL">
                                                     <rect key="frame" x="8" y="8" width="132" height="100"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-pf-bwq">
@@ -1426,7 +1552,6 @@
                                         <connections>
                                             <outlet property="recipeImage" destination="nCl-5L-KyL" id="SRq-EF-o39"/>
                                             <outlet property="recipeNameLabel" destination="HeP-pf-bwq" id="kk4-st-4F2"/>
-                                            <segue destination="FAu-aF-fMm" kind="show" identifier="SHOW_RECIPE_DETAIL" id="tk7-FZ-1Nf"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1449,6 +1574,7 @@
                     </view>
                     <connections>
                         <outlet property="recipeCollectionView" destination="a3X-jO-e6K" id="knv-XQ-LoR"/>
+                        <segue destination="FAu-aF-fMm" kind="show" identifier="SHOW_RECIPE_DETAIL" id="nBf-ha-1l1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xEc-d2-5kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1459,13 +1585,14 @@
     <resources>
         <image name="ASK_Profile_Circle.png" width="257" height="285"/>
         <image name="IMG_3375.jpg" width="3264" height="2448"/>
+        <image name="dish.jpg" width="154" height="150"/>
         <image name="food-cooking.jpg" width="3872" height="2592"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cRo-re-YCR"/>
-        <segue reference="LhI-b3-gXS"/>
-        <segue reference="E2w-qt-tX4"/>
+        <segue reference="6S3-z7-3lK"/>
+        <segue reference="lv8-bW-QUk"/>
         <segue reference="1y4-47-8z5"/>
+        <segue reference="9Vd-Nl-aqK"/>
         <segue reference="bDX-Dz-NtO"/>
     </inferredMetricsTieBreakers>
 </document>

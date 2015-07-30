@@ -28,6 +28,19 @@
 		79488B001B69315300863A8C /* food-cooking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79488AFF1B69315300863A8C /* food-cooking.jpg */; };
 		79488B031B695DEE00863A8C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B011B695DEE00863A8C /* Bolts.framework */; };
 		79488B041B695DEE00863A8C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B021B695DEE00863A8C /* Parse.framework */; };
+		79488B061B695E5600863A8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B051B695E5600863A8C /* AudioToolbox.framework */; };
+		79488B081B695E5A00863A8C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B071B695E5A00863A8C /* Accounts.framework */; };
+		79488B0A1B695E6100863A8C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B091B695E6100863A8C /* CFNetwork.framework */; };
+		79488B0C1B695E6800863A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B0B1B695E6800863A8C /* CoreGraphics.framework */; };
+		79488B0E1B695E6F00863A8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B0D1B695E6F00863A8C /* CoreLocation.framework */; };
+		79488B101B695E7500863A8C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B0F1B695E7500863A8C /* QuartzCore.framework */; };
+		79488B121B695E7C00863A8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B111B695E7C00863A8C /* Security.framework */; };
+		79488B141B695E8500863A8C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B131B695E8500863A8C /* StoreKit.framework */; };
+		79488B161B695E9000863A8C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B151B695E9000863A8C /* SystemConfiguration.framework */; };
+		79488B181B695E9C00863A8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B171B695E9C00863A8C /* libz.dylib */; };
+		79488B1A1B695EA800863A8C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B191B695EA800863A8C /* libsqlite3.dylib */; };
+		79488B1C1B695EC400863A8C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79488B1B1B695EC400863A8C /* Social.framework */; };
+		79488B1F1B69885300863A8C /* dish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 79488B1E1B69885300863A8C /* dish.jpg */; };
 		794F19EB1B197A06002C8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EA1B197A06002C8500 /* AppDelegate.swift */; };
 		794F19EE1B197A06002C8500 /* CookingClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */; };
 		794F19F01B197A06002C8500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F19EF1B197A06002C8500 /* ViewController.swift */; };
@@ -35,7 +48,6 @@
 		794F19F51B197A06002C8500 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794F19F41B197A06002C8500 /* Images.xcassets */; };
 		794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794F19F61B197A06002C8500 /* LaunchScreen.xib */; };
 		794F1A041B197A06002C8500 /* CookingClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A031B197A06002C8500 /* CookingClubTests.swift */; };
-		794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */; };
 		794F1A101B199CAF002C8500 /* IMG_3375.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */; };
 		794F1A181B280CC2002C8500 /* StartClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A171B280CC2002C8500 /* StartClubViewController.swift */; };
 		794F1A1A1B280CE2002C8500 /* JoinClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794F1A191B280CE2002C8500 /* JoinClubViewController.swift */; };
@@ -84,6 +96,19 @@
 		79488AFF1B69315300863A8C /* food-cooking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "food-cooking.jpg"; sourceTree = "<group>"; };
 		79488B011B695DEE00863A8C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		79488B021B695DEE00863A8C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		79488B051B695E5600863A8C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		79488B071B695E5A00863A8C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		79488B091B695E6100863A8C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		79488B0B1B695E6800863A8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79488B0D1B695E6F00863A8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		79488B0F1B695E7500863A8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79488B111B695E7C00863A8C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		79488B131B695E8500863A8C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		79488B151B695E9000863A8C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		79488B171B695E9C00863A8C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		79488B191B695EA800863A8C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		79488B1B1B695EC400863A8C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		79488B1E1B69885300863A8C /* dish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dish.jpg; sourceTree = "<group>"; };
 		794F19E51B197A06002C8500 /* CookingClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794F19E91B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794F19EA1B197A06002C8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +120,6 @@
 		794F19FD1B197A06002C8500 /* CookingClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookingClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		794F1A021B197A06002C8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794F1A031B197A06002C8500 /* CookingClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingClubTests.swift; sourceTree = "<group>"; };
-		794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3660.jpg; sourceTree = "<group>"; };
 		794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3375.jpg; sourceTree = "<group>"; };
 		794F1A171B280CC2002C8500 /* StartClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartClubViewController.swift; sourceTree = "<group>"; };
 		794F1A191B280CE2002C8500 /* JoinClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinClubViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +141,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79488B1C1B695EC400863A8C /* Social.framework in Frameworks */,
+				79488B1A1B695EA800863A8C /* libsqlite3.dylib in Frameworks */,
+				79488B181B695E9C00863A8C /* libz.dylib in Frameworks */,
+				79488B161B695E9000863A8C /* SystemConfiguration.framework in Frameworks */,
+				79488B141B695E8500863A8C /* StoreKit.framework in Frameworks */,
+				79488B121B695E7C00863A8C /* Security.framework in Frameworks */,
+				79488B101B695E7500863A8C /* QuartzCore.framework in Frameworks */,
+				79488B0E1B695E6F00863A8C /* CoreLocation.framework in Frameworks */,
+				79488B0C1B695E6800863A8C /* CoreGraphics.framework in Frameworks */,
+				79488B0A1B695E6100863A8C /* CFNetwork.framework in Frameworks */,
+				79488B081B695E5A00863A8C /* Accounts.framework in Frameworks */,
+				79488B061B695E5600863A8C /* AudioToolbox.framework in Frameworks */,
 				79488B041B695DEE00863A8C /* Parse.framework in Frameworks */,
 				79488B031B695DEE00863A8C /* Bolts.framework in Frameworks */,
 			);
@@ -132,11 +168,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79488B1D1B695F0C00863A8C /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79488B191B695EA800863A8C /* libsqlite3.dylib */,
+				79488B171B695E9C00863A8C /* libz.dylib */,
+				79488B151B695E9000863A8C /* SystemConfiguration.framework */,
+				79488B131B695E8500863A8C /* StoreKit.framework */,
+				79488B111B695E7C00863A8C /* Security.framework */,
+				79488B0F1B695E7500863A8C /* QuartzCore.framework */,
+				79488B0D1B695E6F00863A8C /* CoreLocation.framework */,
+				79488B0B1B695E6800863A8C /* CoreGraphics.framework */,
+				79488B091B695E6100863A8C /* CFNetwork.framework */,
+				79488B071B695E5A00863A8C /* Accounts.framework */,
+				79488B051B695E5600863A8C /* AudioToolbox.framework */,
+				79488B011B695DEE00863A8C /* Bolts.framework */,
+				79488B021B695DEE00863A8C /* Parse.framework */,
+				79488B1B1B695EC400863A8C /* Social.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		794F19DC1B197A05002C8500 = {
 			isa = PBXGroup;
 			children = (
-				79488B011B695DEE00863A8C /* Bolts.framework */,
-				79488B021B695DEE00863A8C /* Parse.framework */,
+				79488B1D1B695F0C00863A8C /* frameworks */,
 				794F19E71B197A06002C8500 /* CookingClub */,
 				794F1A001B197A06002C8500 /* CookingClubTests */,
 				794F19E61B197A06002C8500 /* Products */,
@@ -162,6 +218,7 @@
 				794F19F61B197A06002C8500 /* LaunchScreen.xib */,
 				79488AFF1B69315300863A8C /* food-cooking.jpg */,
 				794F19EC1B197A06002C8500 /* CookingClub.xcdatamodeld */,
+				79488B1E1B69885300863A8C /* dish.jpg */,
 				79488AFD1B682EC500863A8C /* ASK_Profile_Circle.png */,
 				791854051B2A857C0020FABE /* cheesy_soup.jpg */,
 				791854061B2A857C0020FABE /* Strawberry-Rhubarb-Pie.jpg */,
@@ -169,7 +226,6 @@
 				791854081B2A857C0020FABE /* popovers.jpg */,
 				791854091B2A857C0020FABE /* salad.jpeg */,
 				7918540A1B2A857C0020FABE /* Sesame-Noodles.jpg */,
-				794F1A0D1B1989BA002C8500 /* IMG_3660.jpg */,
 				794F1A0F1B199CAF002C8500 /* IMG_3375.jpg */,
 				794F19E81B197A06002C8500 /* Supporting Files */,
 			);
@@ -205,6 +261,11 @@
 			isa = PBXGroup;
 			children = (
 				794F19F11B197A06002C8500 /* Main.storyboard */,
+				791853FA1B2A704A0020FABE /* ProfileDateAndDishCell.xib */,
+				791854021B2A7A250020FABE /* OtherDishCell.xib */,
+				791853FE1B2A754D0020FABE /* HostCell.xib */,
+				791854121B2A91500020FABE /* MembersCell.xib */,
+				791854161B2A92040020FABE /* PendingMemberCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -218,20 +279,15 @@
 				794F1A191B280CE2002C8500 /* JoinClubViewController.swift */,
 				794F1A1B1B280D22002C8500 /* ProfileViewController.swift */,
 				791853F91B2A704A0020FABE /* ProfileDateAndDishCell.swift */,
-				791853FA1B2A704A0020FABE /* ProfileDateAndDishCell.xib */,
 				791853F71B2A6B930020FABE /* PickADishViewController.swift */,
 				794F1A1D1B280D55002C8500 /* AccountViewController.swift */,
 				794F1A1F1B280D8B002C8500 /* AddRecipeViewController.swift */,
 				794F1A311B2820F6002C8500 /* EventViewController.swift */,
 				791854011B2A7A250020FABE /* OtherDishCell.swift */,
-				791854021B2A7A250020FABE /* OtherDishCell.xib */,
 				791853FD1B2A754D0020FABE /* HostCell.swift */,
-				791853FE1B2A754D0020FABE /* HostCell.xib */,
 				794F1A331B2822AC002C8500 /* MembersViewController.swift */,
 				791854111B2A91500020FABE /* MembersCell.swift */,
-				791854121B2A91500020FABE /* MembersCell.xib */,
 				791854151B2A92040020FABE /* PendingMemberCell.swift */,
-				791854161B2A92040020FABE /* PendingMemberCell.xib */,
 				794F1A3B1B282539002C8500 /* CalendarViewController.swift */,
 				794F1A231B280DFC002C8500 /* NewPasswordViewController.swift */,
 				794F1A251B280E2D002C8500 /* AllRecipesViewController.swift */,
@@ -334,9 +390,9 @@
 				791854141B2A91500020FABE /* MembersCell.xib in Resources */,
 				7918540B1B2A857C0020FABE /* cheesy_soup.jpg in Resources */,
 				791854041B2A7A250020FABE /* OtherDishCell.xib in Resources */,
+				79488B1F1B69885300863A8C /* dish.jpg in Resources */,
 				79488AFE1B682EC500863A8C /* ASK_Profile_Circle.png in Resources */,
 				794F19F81B197A06002C8500 /* LaunchScreen.xib in Resources */,
-				794F1A0E1B1989BA002C8500 /* IMG_3660.jpg in Resources */,
 				7918540D1B2A857C0020FABE /* frozen-margarita.jpg in Resources */,
 				794F19F51B197A06002C8500 /* Images.xcassets in Resources */,
 			);

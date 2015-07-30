@@ -16,11 +16,14 @@ class JoinClubViewController: UIViewController {
     @IBOutlet weak var retypePasswordTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
+    
+    var usernameJoin: String!
+    var passwordJoin: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        passwordTextField.text = passwordJoin
+        retypePasswordTextField.text = usernameJoin
     }
 
     override func didReceiveMemoryWarning() {
