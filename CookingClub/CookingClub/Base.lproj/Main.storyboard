@@ -645,6 +645,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="RGB-OM-55e">
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="5tr-o0-ppV" id="gqP-0W-T7E"/>
+                                                <segue destination="9Lk-X1-Fvc" kind="show" id="IwR-4e-odw"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Pick a Dish" id="poe-9w-GW3">
@@ -952,7 +953,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="kit-ae-p28">
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="OVz-1X-vQJ" id="OcH-M8-fwr"/>
-                                                <segue destination="5tr-o0-ppV" kind="show" id="6i5-DF-JpK"/>
+                                                <segue destination="5tr-o0-ppV" kind="show" id="AZw-WH-vuT"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Add a Reminder" id="gxJ-GO-Rzt">
@@ -1019,6 +1020,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="fYl-dH-lai">
                                             <connections>
                                                 <action selector="cancelButtonPressed:" destination="Fhe-1E-yTz" id="8jD-eQ-igY"/>
+                                                <segue destination="9Lk-X1-Fvc" kind="show" id="aAX-Dx-6cd"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Done" id="H1n-Uh-5Ha">
@@ -1194,7 +1196,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="A0O-qd-nkt">
                                             <connections>
                                                 <action selector="cancelButtonPressed:" destination="LF9-Fd-anF" id="Ta4-uZ-C1W"/>
-                                                <segue destination="Fhe-1E-yTz" kind="show" identifier="SHOW_PROFILE_BACK" id="9Vd-Nl-aqK"/>
+                                                <segue destination="Fhe-1E-yTz" kind="show" id="odk-19-u7P"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="YBS-AF-gKw">
@@ -1455,7 +1457,7 @@
                                 <color key="textColor" red="0.97885982989999998" green="0.18686109309999999" blue="0.098142108510000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASK_Profile_Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZCy-Gh-Jfe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ASK_Profile_Circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZCy-Gh-Jfe">
                                 <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="IIK-UF-kXd"/>
@@ -1606,10 +1608,10 @@
         <image name="food-cooking.jpg" width="3872" height="2592"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S3-z7-3lK"/>
-        <segue reference="LhI-b3-gXS"/>
-        <segue reference="E2w-qt-tX4"/>
-        <segue reference="NXA-g7-4D6"/>
+        <segue reference="IwR-4e-odw"/>
+        <segue reference="AZw-WH-vuT"/>
         <segue reference="1y4-47-8z5"/>
+        <segue reference="odk-19-u7P"/>
+        <segue reference="bDX-Dz-NtO"/>
     </inferredMetricsTieBreakers>
 </document>

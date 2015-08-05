@@ -43,6 +43,8 @@ class AddRecipeViewController: UIViewController, UITextFieldDelegate, UIImagePic
         
         imagePicker.delegate = self
         
+        self.userImage.layer.cornerRadius = 50.0
+        
         quoteLabel.text = "Add Quote"
         recipeNameLabel.text = "Recipe Name:"
         recipeLinkLabel.text = "Recipe Link:"
@@ -69,10 +71,14 @@ class AddRecipeViewController: UIViewController, UITextFieldDelegate, UIImagePic
         // starts the activity spinner
         self.actInd.startAnimating()
         
-        var addRecipe = PFObject(className: "dish")
-        addRecipe["quote"] = quoteTextField.text
+        var currentUser = PFUser.currentUser()
+        
+        var addRecipe = PFObject(className: "Recipe")
+        addRecipe["recipeQuote"] = quoteTextField.text
         addRecipe["recipeName"] = recipeTextField.text
         addRecipe["recipeLink"] = recipeLinkTextField.text
+        addRecipe.setObject(currentUser!, forKey: "author")
+        
 //        addRecipe[""] = recipeImage.image
         
         addRecipe.saveInBackgroundWithBlock { (Success: Bool, error: NSError?) -> Void in

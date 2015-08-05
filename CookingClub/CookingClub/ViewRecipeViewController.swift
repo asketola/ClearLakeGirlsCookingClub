@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Bolts
 
 class ViewRecipeViewController: UIViewController {
     
@@ -25,11 +26,34 @@ class ViewRecipeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserImage()
+        
+
+        
         recipeLinkLabel.text = dishData["recipeLink"] as? String
         recipeNameLabel.text = dishData["recipeName"] as? String
         quoteLabel.text = dishData["quote"] as? String
         recipeImage.image = dishDataImage
  
+    }
+    
+    func getUserImage() {
+        
+        var author: PFUser = dishData["author"] as! PFUser!
+        var objectID: String = author.objectId!
+        println("objectID = \(objectID)")
+        let user:PFUser = PFQuery.getUserObjectWithId(objectID)!
+
+        // lazily load the author's image
+        let dishPicture = user["userImage"] as! PFFile
+        dishPicture.getDataInBackgroundWithBlock { (imageData, error) -> Void in
+            if (error == nil) {
+                let image = UIImage(data:imageData!)
+                self.userImage.layer.cornerRadius = 50.0
+                self.userImage.image = image
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

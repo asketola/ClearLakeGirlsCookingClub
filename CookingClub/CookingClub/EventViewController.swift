@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
 
     @IBOutlet weak var dateLabel: UILabel!
     var hostNameArray = ["ASK_Profile_Circle.png", "Anne Ketola", "(555)-555-5555", "Entree"]
@@ -19,6 +19,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var otherDishesTableView: UITableView!
     
     @IBOutlet weak var hostMap: MKMapView!
+    var address = "2911 2nd Ave, Seattle WA 98121"
     
     var tablename = String()
     var tabledate = String()
@@ -38,9 +39,21 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         var dishNib = UINib(nibName: "OtherDishCell", bundle: nil)
         otherDishesTableView.registerNib(dishNib, forCellReuseIdentifier: "OtherDishCell")
+        
+//        hostMap.showsUserLocation = true
+//        hostMap.delegate = self
+        
+        var geocoder = CLGeocoder()
+            geocoder.geocodeAddressString(address, completionHandler: { (placemarks, error) -> Void in
+                let placemark = placemarks.first as! CLPlacemark
+                let location = placemark.location
+                let coordinate = location.coordinate
+                println("Coordinate: \(coordinate)")
+//                self.hostMap.addAnnotation(annotation: coordinate)
 
-        // Do any additional setup after loading the view.
-        // get date and dishes from Parse
+            })
+        
+        
 
     }
 

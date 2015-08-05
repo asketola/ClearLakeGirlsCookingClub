@@ -68,12 +68,14 @@ class AllRecipesViewController: UIViewController, UICollectionViewDataSource, UI
         
         self.object = self.dishObjects.objectAtIndex(indexPath.row) as! PFObject
         self.objectImage = self.dishImages.objectAtIndex(indexPath.row) as! UIImage
+        
+        println("The object we get back \(object)")
         performSegueWithIdentifier("SHOW_RECIPE_DETAIL", sender: self)
     }
     
     func fetchAllDishes() {
         // This is the query we send to Parse to get all the bikes that the shop sells
-        var query: PFQuery = PFQuery(className: "Dish")
+        var query: PFQuery = PFQuery(className: "Recipe")
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             
             if error == nil {

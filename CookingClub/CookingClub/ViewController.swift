@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         view.addSubview(self.actInd)
     }
     
-    // Keyboard mitigation
+    // Keyboard management
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
